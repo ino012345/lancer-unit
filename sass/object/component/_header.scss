@@ -1,0 +1,19 @@
+.header {
+  &__inner {
+    max-width: rem(1280);
+    width: 100%;
+    height: rem(80);
+    padding-top: rem(20);
+    padding-left: rem(65);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__logo {
+    width: 15%;
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
