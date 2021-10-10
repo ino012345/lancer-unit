@@ -1,0 +1,36 @@
+.news {
+  &__title {
+    font-size: rem(30);
+    font-weight: bold;
+  }
+  &__head {
+    font-size: rem(20);
+    font-weight: bold;
+  }
+  &__item {
+    display: flex;
+  }
+  &__badge {
+    font-size: rem(14);
+    font-weight: bold;
+    color: #ff0000;
+    text-transform: uppercase;
+  }
+  &__date {
+    font-size: rem(14);
+    font-weight: medium;
+    color: #808080;
+  }
+  &__link {
+    font-size: rem(14);
+    font-weight: bold;
+  }
+  &__attention {
+    font-size: rem(12);
+    font-weight: bold;
+    a {
+      color: #00a0e9;
+      text-decoration: underline;
+    }
+  }
+}

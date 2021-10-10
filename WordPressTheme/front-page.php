@@ -6,8 +6,10 @@
       <figure class="fv__title">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="ランサーユニット">
       </figure>
-      <a href="#" class="fv__btn ">法人のお客様</a>
-      <a href="#" class="fv__btn">クリエイター登録</a>
+      <div class="fv__btnWrap">
+        <a href="#" class="fv__btn fv__btn--left">法人のお客様 ></a>
+        <a href="#" class="fv__btn fv__btn--right">クリエイター登録 ></a>
+      </div>
     </div>
     <figure class="fv__mainImage">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_236629968_Preview.jpeg" alt="パソコンを操作している画像">
@@ -31,7 +33,7 @@
       </figure>
     </div>
     <div class="introduction__cardUnit">
-      <div class="introduction__card">
+      <div class="introduction__card introduction__card--left">
         <p class="introduction__cardTitle">企業の課題</p>
         <p class="introduction__cardProblem">クリエイティブの外注が不安</p>
         <ul class="introduction__problemList">
@@ -39,9 +41,9 @@
           <li class="introduction__problemItem">専属として長くお付き合いしたい</li>
           <li class="introduction__problemItem">トレンドなど提案が欲しい</li>
         </ul>
-        <p class="introduction__cardExplain">ビジネスにおいて、Webや動画などのクリエイティブ制作が急きょ必要となる場面は多くあります。しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。</p>
+        <p class="introduction__cardExplain introduction__cardExplain--left">ビジネスにおいて、Webや動画などのクリエイティブ制作が急きょ必要となる場面は多くあります。しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。</p>
       </div>
-      <div class="introduction__card introduction__card--navy">
+      <div class="introduction__card introduction__card--right">
         <p class="introduction__cardTitle">クリエイターの想い</p>
         <p class="introduction__cardProblem">フリーランスとして自由に働きたい</p>
         <ul class="introduction__problemList">
@@ -49,7 +51,7 @@
           <li class="introduction__problemItem">自分の強みを活かして</li>
           <li class="introduction__problemItem">企業との繋がりを確保</li>
         </ul>
-        <p class="introduction__cardExplain">一人で、必要スキルや企業カルチャー、条件（稼働・報酬）をカバーするには難しいことが多々あります。<br>案件ベースでなく企業の課題解決に必要なクリエイターとしてユニット（最大3名）に参加します。<br>企業と継続的なパートナーシップを築く事が期待できます。</p>
+        <p class="introduction__cardExplain introduction__cardExplain--right">一人で、必要スキルや企業カルチャー、条件（稼働・報酬）をカバーするには難しいことが多々あります。<br>案件ベースでなく企業の課題解決に必要なクリエイターとしてユニット（最大3名）に参加します。<br>企業と継続的なパートナーシップを築く事が期待できます。</p>
       </div>
     </div>
     <figure class="introduction__arrow">
@@ -342,7 +344,7 @@
           </div>
         </div>
       </div>
-      <div class="seminar__card">
+      <div class="seminar__card seminar__card--finish">
         <figure class="seminar__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
         </figure>

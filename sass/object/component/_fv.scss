@@ -1,0 +1,43 @@
+.fv {
+  &__catch {
+    font-size: rem(20);
+    line-height: ( 52 / 30 );
+    font-weight: bold;
+  }
+  &__title {
+    width: rem(330);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__btnWrap {
+    display: flex;
+  }
+  &__btn {
+    font-size: rem(14);
+    font-weight: bold;
+
+    &--left {
+      border: rem(3) solid #070749;
+      background-color: #fff;
+      color: #070749;
+    }
+    &--right {
+      background-color: #070749;
+      color: #fff;
+    }
+  }
+  &__mainImage {
+    width: 69.8%;
+    height: auto;
+    margin-right: calc(50% - 50vw);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}

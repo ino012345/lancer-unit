@@ -1,0 +1,43 @@
+.case {
+  &__title {
+    font-size: rem(30);
+    font-weight: bold;
+  }
+  &__image {
+    width: rem(380);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__text {
+    font-size: rem(17);
+    font-weight: bold;
+    line-height: ( 41.86 / 26.05);
+  }
+  &__industry {
+    font-size: rem(12);
+    font-weight: bold;
+    color: #808080;
+  }
+  &__name {
+    font-size: rem(16);
+    font-weight: bold;
+  }
+  &__category {
+    display: flex;
+  }
+  &__logo {
+    width: rem(90);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__categoryItem {
+    font-size: rem(10);
+    font-weight: medium;
+  }
+}

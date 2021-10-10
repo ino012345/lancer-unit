@@ -1,0 +1,63 @@
+.footer {
+  &__logos {
+    display: flex;
+  }
+  &__lancer {
+    width: rem(283);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__digital {
+    display: flex;
+  }
+  &__digitalName {
+    font-size: rem(14);
+    font-weight: medium;
+  }
+  &__difgitalLogo {
+    width: rem(205);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__contents {
+    display: flex;
+  }
+  &__nav {
+    display: flex;
+  }
+  &__navItem {
+    font-size: rem(12);
+  }
+  &__relatedLogos {
+    width: rem(309);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__information {
+    display: flex;
+  }
+  &__sns {
+    display: flex;
+  }
+  &__snsLink {
+    width: rem(20);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__copyright {
+    font-size: rem(10);
+    font-weight: medium;
+  }
+}
