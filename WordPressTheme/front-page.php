@@ -26,7 +26,7 @@
     <div class="introduction__media">
       <div class="introduction__body">
         <h1 class="introduction__title">ランサーユニットが目指す<br>企業とフリーランス<br>クリエイターの新しいカタチ</h1>
-        <p class="introduction__explain">企業が抱えるクリエイティブ課題に対して必要なスキルを持ったメンバーをユニットとしてアサイン。フリーランスクリエイターが強みを持って集結し、企業の課題解決をするマッチングサービス事業を展開しています。</p>
+        <p class="introduction__explain">企業が抱えるクリエイティブ課題に対して必要なスキルを持ったメンバーを<br>ユニットとしてアサイン。フリーランスクリエイターが強みを持って集結し、<br>企業の課題解決をするマッチングサービス事業を展開しています。</p>
       </div>
       <figure class="introduction__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/introduction@2x-100.jpg" alt="企業とフリーランスクリエイターの繋がりのイメージ">
@@ -35,21 +35,21 @@
     <div class="introduction__cardUnit">
       <div class="introduction__card introduction__card--left">
         <p class="introduction__cardTitle">企業の課題</p>
-        <p class="introduction__cardProblem">クリエイティブの外注が不安</p>
+        <p class="introduction__cardProblem introduction__cardProblem--left">クリエイティブの外注が不安</p>
         <ul class="introduction__problemList">
-          <li class="introduction__problemItem">スキルや条件に合う人材が見つからない</li>
-          <li class="introduction__problemItem">専属として長くお付き合いしたい</li>
-          <li class="introduction__problemItem">トレンドなど提案が欲しい</li>
+          <li class="introduction__problemItem introduction__problemItem--left">スキルや条件に合う人材が見つからない</li>
+          <li class="introduction__problemItem introduction__problemItem--left">専属として長くお付き合いしたい</li>
+          <li class="introduction__problemItem introduction__problemItem--left">トレンドなど提案が欲しい</li>
         </ul>
-        <p class="introduction__cardExplain introduction__cardExplain--left">ビジネスにおいて、Webや動画などのクリエイティブ制作が急きょ必要となる場面は多くあります。しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。</p>
+        <p class="introduction__cardExplain introduction__cardExplain--left">ビジネスにおいて、Web や動画などのクリエイティブ制作が急きょ必要となる場面は多くあります。しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。<br><br></p>
       </div>
       <div class="introduction__card introduction__card--right">
         <p class="introduction__cardTitle">クリエイターの想い</p>
-        <p class="introduction__cardProblem">フリーランスとして自由に働きたい</p>
+        <p class="introduction__cardProblem introduction__cardProblem--right">フリーランスとして自由に働きたい</p>
         <ul class="introduction__problemList">
-          <li class="introduction__problemItem">時間や場所に縛られずに</li>
-          <li class="introduction__problemItem">自分の強みを活かして</li>
-          <li class="introduction__problemItem">企業との繋がりを確保</li>
+          <li class="introduction__problemItem introduction__problemItem--right">時間や場所に縛られずに</li>
+          <li class="introduction__problemItem introduction__problemItem--right">自分の強みを活かして</li>
+          <li class="introduction__problemItem introduction__problemItem--right">企業との繋がりを確保</li>
         </ul>
         <p class="introduction__cardExplain introduction__cardExplain--right">一人で、必要スキルや企業カルチャー、条件（稼働・報酬）をカバーするには難しいことが多々あります。<br>案件ベースでなく企業の課題解決に必要なクリエイターとしてユニット（最大3名）に参加します。<br>企業と継続的なパートナーシップを築く事が期待できます。</p>
       </div>

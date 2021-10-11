@@ -1,12 +1,22 @@
 .introduction {
+  padding-top: rem(140);
+  &__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__body {
+    margin-right: rem(19);
+  }
   &__title {
     font-size: rem(30);
     font-weight: bold;
     line-height: ( 75 / 45 );
   }
   &__explain {
+    margin-top: rem(35.75);
     font-size: rem(14);
-    font-weight: medium;
+    font-weight: 600;
     line-height: ( 35 / 20 );
   }
   &__image {
@@ -17,22 +27,103 @@
       height: 100%;
     }
   }
+  &__cardUnit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(26);
+  }
+  &__card {
+    &--left {
+      margin-right: rem(26);
+      color: #00a0e9;
+    }
+    &__right {
+      color: #070749;
+    }
+    width: rem(430);
+    box-shadow: 0 0 rem(10) 0 rgba($color: #00a0e9, $alpha: .2);
+    padding: rem(26) rem(40);
+    border-radius: rem(30);
+  }
   &__cardTitle {
     font-size: rem(24);
     font-weight: bold;
+    text-align: center;
   }
   &__cardProblem {
+    margin-top: rem(19.5);
     font-size: rem(16);
     font-weight: bold;
+    text-align: center;
+    line-height: rem(40);
+    display: block;
+    width: 100%;
+    position: relative;
+    &--left {
+      ::after {
+        content: "";
+        width: rem(10);
+        height: rem(10);
+        background-color: #00a0e9;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        bottom: rem(-8);
+      }
+    }
+    &--right {
+      ::after {
+        content: "";
+        width: rem(10);
+        height: rem(10);
+        background-color: #070749;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        bottom: rem(-8);
+      }
+    }
+  }
+  &__problemList {
+    margin-top: rem(29);
   }
   &__problemItem {
     font-size: rem(16);
     font-weight: bold;
+    position: relative;
+    margin-left: rem(20);
+    &--left {
+      ::before {
+        content: "";
+        width: rem(16);
+        height: rem(16);
+        background-color: #00a0e9;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: rem(-20);
+        transform: translateY(-50%);
+      }
+    }
+    &--right {
+      ::before {
+        content: "";
+        width: rem(16);
+        height: rem(16);
+        background-color: #070749;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: rem(-20);
+        transform: translateY(-50%);
+      }
+    }
   }
   &__cardExplain {
     font-size: rem(12);
-    font-weight: medium;
+    font-weight: 600;
     line-height: ( 30 / 18 );
+    padding-top: rem(22.75);
+    margin-top: rem(22.75);
     &--left {
       border-top: 1px solid #00a0e9;
     }

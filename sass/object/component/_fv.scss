@@ -1,11 +1,21 @@
 .fv {
+  position: relative;
+  margin-top: rem(80);
+  &__body {
+    position: absolute;
+    left: rem(70);
+    top: 50%;
+    transform: translateY(-50%);
+  }
   &__catch {
     font-size: rem(20);
     line-height: ( 52 / 30 );
     font-weight: bold;
+    letter-spacing: 0.05em;
   }
   &__title {
-    width: rem(330);
+    margin-top: rem(40);
+    width: rem(350);
     height: auto;
     img {
       width: 100%;
@@ -13,27 +23,36 @@
     }
   }
   &__btnWrap {
+    margin-top: rem(65);
     display: flex;
   }
   &__btn {
     font-size: rem(14);
     font-weight: bold;
-
+    padding-right: rem(10);
+    padding-top: rem(8);
+    padding-bottom: rem(8);
     &--left {
       border: rem(3) solid #070749;
       background-color: #fff;
       color: #070749;
+      margin-right: rem(16);
+      padding-left: rem(15);
     }
     &--right {
+      border: rem(3) solid #070749;
       background-color: #070749;
       color: #fff;
+      padding-left: rem(10);
     }
   }
   &__mainImage {
     width: 69.8%;
     height: auto;
     margin-right: calc(50% - 50vw);
+    margin-left: auto;
     img {
+      border-radius: rem(20) 0 0 rem(20);
       width: 100%;
       height: 100%;
       object-fit: cover;
