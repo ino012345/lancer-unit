@@ -1,33 +1,67 @@
 .news {
+  background-color: #f2fafe;
+  padding-top: rem(68);
+  padding-bottom: rem(62);
   &__title {
     font-size: rem(30);
     font-weight: bold;
+    text-align: center;
+  }
+  &__inner {
+    margin-top: rem(36);
+    margin-bottom: rem(13);
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: rem(26);
+    padding-bottom: rem(30);
+    padding-left: rem(32.5);
+    border-radius: rem(25);
+    background-color: #fff;
   }
   &__head {
     font-size: rem(20);
     font-weight: bold;
+    margin-top: rem(30);
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__list {
+    margin-top: rem(22.75);
   }
   &__item {
     display: flex;
+    margin-top: rem(16.25);
+    &:first-child {
+      margin-top: 0;
+    }
   }
   &__badge {
     font-size: rem(14);
     font-weight: bold;
     color: #ff0000;
     text-transform: uppercase;
+    margin-right: rem(13);
   }
   &__date {
     font-size: rem(14);
     font-weight: medium;
     color: #808080;
+    margin-right: rem(13);
+    color: #333;
   }
   &__link {
     font-size: rem(14);
     font-weight: bold;
+    color: #333;
+    text-decoration: underline;
   }
   &__attention {
     font-size: rem(12);
     font-weight: bold;
+    text-align: center;
+    margin-bottom: rem(55);
     a {
       color: #00a0e9;
       text-decoration: underline;

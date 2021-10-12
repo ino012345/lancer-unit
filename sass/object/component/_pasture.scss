@@ -1,14 +1,20 @@
 .pasture {
+  padding-top: rem(156);
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
   &__title {
     font-size: rem(30);
     font-weight: bold;
   }
   &__explain {
+    margin-top: rem(29);
     font-size: rem(14);
-    font-weight: medium;
+    font-weight: 600;
     line-height: ( 35 / 20 );
   }
   &__image {
+    margin-top: rem(13);
     width: 47%;
     height: auto;
     img {
@@ -17,8 +23,9 @@
     }
   }
   &__attention {
+    margin-top: rem(10);
     font-size: rem(10);
-    font-weight: medium;
+    font-weight: 600;
     line-height: ( 24 / 14 );
   }
 }

@@ -82,60 +82,70 @@
     <p class="flow__explain">クリエイター情報を入力いただきますと、ご希望にあった案件が発生した際に候補者として優先的にご紹介させていただきます。</p>
     <ul class="flow__list">
       <li class="flow__item">
-        <figure class="flow__number">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/01@2x.png" alt="01">
-        </figure>
-        <div class="flow__body">
-          <p class="flow__head">クリエイター登録</p>
-          <p class="flow__detail">対応領域や自己PR、ポートフォリオ、実績などクリエイター情報をご入力ください。</p>
+        <div class="flow__contents">
+          <figure class="flow__number flow__number--first">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/01@2x.png" alt="01">
+          </figure>
+          <div class="flow__body">
+            <p class="flow__head">クリエイター登録</p>
+            <p class="flow__detail">対応領域や自己PR、ポートフォリオ、実績などクリエイター情報をご入力ください。</p>
+          </div>
         </div>
         <figure class="flow__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/01-image@2x-100.jpg" alt="クリエイター登録イメージ">
         </figure>
       </li>
-      <li class="flow__item">
-        <figure class="flow__number">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/02@2x.png" alt="02">
-        </figure>
-        <div class="flow__body">
-          <p class="flow__head">スカウトもしくは募集</p>
-          <p class="flow__detail">企業からのオファー、事務局からスカウトメールを送ります。案件内容をご確認ください。</p>
+      <li class="flow__item flow__item--second">
+        <div class="flow__contents">
+          <figure class="flow__number">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/02@2x.png" alt="02">
+          </figure>
+          <div class="flow__body">
+            <p class="flow__head">スカウトもしくは募集</p>
+            <p class="flow__detail">企業からのオファー、事務局からスカウトメールを送ります。案件内容をご確認ください。</p>
+          </div>            
         </div>
         <figure class="flow__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/02-image@2x-100.jpg" alt="スカウトもしくは募集イメージ">
         </figure>
       </li>
-      <li class="flow__item">
-        <figure class="flow__number">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/03@2x.png" alt="03">
-        </figure>
-        <div class="flow__body">
-          <p class="flow__head">面談</p>
-          <p class="flow__detail">企業と案件内容について面談を実施します。<br>お互いにミスマッチがないか確認を行います。<br><br><span class="small">※ZOOMでのオンライン面談</span></p>
+      <li class="flow__item flow__item--third">
+        <div class="flow__contents">
+          <figure class="flow__number">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/03@2x.png" alt="03">
+          </figure>
+          <div class="flow__body">
+            <p class="flow__head">面談</p>
+            <p class="flow__detail">企業と案件内容について面談を実施します。<br>お互いにミスマッチがないか確認を行います。<br><br><span class="small">※ZOOMでのオンライン面談</span></p>
+          </div>            
         </div>
         <figure class="flow__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/03-image@2x-100.jpg" alt="面談イメージ">
         </figure>
       </li>
-      <li class="flow__item">
-        <figure class="flow__number">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/04@2x.png" alt="04">
-        </figure>
-        <div class="flow__body">
-          <p class="flow__head">契約</p>
-          <p class="flow__detail">面談後、企業の課題やお悩み解決を一緒に実行できるメンバーだとご判断いただきましたら契約書類を発行します。<br><br><span class="small">※企業との直接契約</span></p>
+      <li class="flow__item flow__item--fourth">
+        <div class="flow__contents">
+          <figure class="flow__number">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/04@2x.png" alt="04">
+          </figure>
+          <div class="flow__body">
+            <p class="flow__head">契約</p>
+            <p class="flow__detail">面談後、企業の課題やお悩み解決を一緒に実行できるメンバーだとご判断いただきましたら契約書類を発行します。<br><br><span class="small">※企業との直接契約</span></p>
+          </div>          
         </div>
         <figure class="flow__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/04-image@2x-100.jpg" alt="契約イメージ">
         </figure>
       </li>
-      <li class="flow__item">
-        <figure class="flow__number">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/05@2x.png" alt="05">
-        </figure>
-        <div class="flow__body">
-          <p class="flow__head">導入</p>
-          <p class="flow__detail">契約後、実際の業務を開始します。その後は企業と連携し、運用をおこなってください。</p>
+      <li class="flow__item  flow__item--fifth">
+        <div class="flow__contents">
+          <figure class="flow__number">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/05@2x.png" alt="05">
+          </figure>
+          <div class="flow__body">
+            <p class="flow__head">導入</p>
+            <p class="flow__detail">契約後、実際の業務を開始します。その後は企業と連携し、運用をおこなってください。</p>
+          </div>          
         </div>
         <figure class="flow__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/05-image@2x-100.jpg" alt="導入イメージ">
@@ -254,17 +264,19 @@
         <figure class="case__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
         </figure>
-        <p class="case__text">まるで社内メンバーのようにフリーランスユニットを活用。スピーディーなLP制作で、事業を成長させる！</p>
-        <p class="case__industry">EC事業／エンターテイメント</p>
-        <p class="case__name">ABEMA Shopping様</p>
-        <div class="case__category">
-          <figure class="case__logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
-          </figure>
-          <div class="case__categoryUnit">
-            <div class="case__categoryItem">アートディレクター</div>
-            <div class="case__categoryItem">グラフィックデザイナー</div>
-            <div class="case__categoryItem">WEBデザイナー</div>
+        <div class="case__body">
+          <p class="case__text">まるで社内メンバーのようにフリーランスユニットを活用。スピーディーなLP制作で、事業を成長させる！</p>
+          <p class="case__industry">EC事業／エンターテイメント</p>
+          <p class="case__name">ABEMA Shopping様</p>
+          <div class="case__category">
+            <figure class="case__logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
+            </figure>
+            <div class="case__categoryUnit">
+              <div class="case__categoryItem case__categoryItem--art">アートディレクター</div>
+              <div class="case__categoryItem case__categoryItem--graphic">グラフィックデザイナー</div>
+              <div class="case__categoryItem case__categoryItem--web">WEBデザイナー</div>
+            </div>
           </div>
         </div>
       </div>
@@ -272,15 +284,19 @@
         <figure class="case__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_278f6acb773d4ba7a8041abec1c81bb6~mv2.jpg" alt="DMM.make様画像">
         </figure>
-        <p class="case__text">もう、キャパオーバーに悩まない。どれほど案件が増えても対応できる柔軟性が、ユニットの魅力です。</p>
-        <p class="case__industry">3Dプリント／製造／CG</p>
-        <p class="case__name">DMM.make様</p>
-        <div class="case__category">
-          <figure class="case__logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
-          </figure>
-          <div class="case__categoryUnit">
-            <div class="case__categoryItem">CG・イラスト</div>
+        <div class="case__body">
+          <p class="case__text">もう、キャパオーバーに悩まない。どれほど案件が増えても対応できる柔軟性が、ユニットの魅力です。</p>
+          <p class="case__industry">3Dプリント／製造／CG</p>
+          <p class="case__name">DMM.make様</p>
+          <div class="case__category">
+            <figure class="case__logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
+            </figure>
+            <div class="case__categoryUnit">
+              <div class="case__categoryItem case__categoryItem--cg">CG・イラスト</div>
+              <div class="case__categoryItem"></div>
+              <div class="case__categoryItem"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -297,10 +313,14 @@
       <div class="benefits__body">
         <p class="benefits__head">FREENANCE for デジタルハリウッド</p>
         <p class="benefits__detail">通常の「FREENANCE」と同様に『FREENANCE振込専⽤⼝座』を提供するほか、『FREENANCEあんしん補償』による仕事中の事故や納品物の⽋陥を原因とする事故の補償（最⾼5,000万円）や情報漏えい、著作権侵害などフリーランス特有の事故補償（最⾼500万円）が無料付帯します。<br>また、「FREENANCE for デジタルハリウッド」の『即⽇払い』では、デジタルハリウッドの卒業⽣であることから個⼈が特定されていること、デジタルハリウッドが取引の選定の仲介に⼊り企業がフリーランサーと取引を始めるという2点から、『即⽇払い』の利⽤においては通常よりも低い⼿数料でご利⽤（ランサーユニット案件のみ）いただくことができます。</p>
-        <a href="#" class="benefits__link">登録・口座開設はこちら</a>
+        <div class="benefits__linkWrap">
+          <a href="#" class="benefits__link">登録・口座開設はこちら</a>
+        </div>
       </div>
     </div>
-    <a href="#" class="benefits__register">新規会員登録＆即日支払いフローマニュアルを確認する ＞</a>
+    <div class="benefits__registerWrap">
+      <a href="#" class="benefits__register">新規会員登録＆即日支払いフローマニュアルを確認する ＞</a>
+    </div>
     <div class="benefits__media">
       <figure class="benefits__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vo_ogp_1200_630.png" alt="DMMバーチャルオフィス紹介画像">
@@ -308,7 +328,9 @@
       <div class="benefits__body">
         <p class="benefits__head">DMMバーチャルオフィス</p>
         <p class="benefits__detail">DMMバーチャルオフィスは、業界最安水準の月あたり2,530円（年間契約一括払いの場合）から基本プランの契約が可能です。<br>オフィスなしでビジネスをスタートしたい個人事業主やフリーランスに向け、ブランドイメージを考慮した都内一等地にある洗練された物件住所と、「スマホにOffice!」をコンセプトとしたスマホ1つでオフィス機能を実現する、利便性の高い会員サイトを提供しています。<br>今後、「ランサーユニット」を中心としたメンバーは通常よりも割引が適用された料金で、DMMバーチャルオフィスのサービスを利用することが可能となります。</p>
-        <a href="#" class="benefits__link">登録はこちら</a>
+        <div class="benefits__linkWrap">
+          <a href="#" class="benefits__link">登録はこちら</a>
+        </div>
       </div>
     </div>
   </section>

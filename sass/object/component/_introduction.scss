@@ -10,7 +10,7 @@
   }
   &__title {
     font-size: rem(30);
-    font-weight: bold;
+    font-weight: 800;
     line-height: ( 75 / 45 );
   }
   &__explain {
@@ -60,23 +60,29 @@
     display: block;
     width: 100%;
     position: relative;
+    border-radius: rem(20);
+    color: #fff;
     &--left {
-      ::after {
+      background-color: #00a0e9;
+      &::after {
         content: "";
-        width: rem(10);
-        height: rem(10);
+        width: rem(20);
+        height: rem(20);
         background-color: #00a0e9;
+        position: absolute;
         left: 50%;
         transform: translateX(-50%) rotate(45deg);
         bottom: rem(-8);
       }
     }
     &--right {
-      ::after {
+      background-color: #070749;
+      &::after {
         content: "";
-        width: rem(10);
-        height: rem(10);
+        width: rem(20);
+        height: rem(20);
         background-color: #070749;
+        position: absolute;
         left: 50%;
         transform: translateX(-50%) rotate(45deg);
         bottom: rem(-8);
@@ -92,7 +98,7 @@
     position: relative;
     margin-left: rem(20);
     &--left {
-      ::before {
+      &::before {
         content: "";
         width: rem(16);
         height: rem(16);
@@ -105,7 +111,7 @@
       }
     }
     &--right {
-      ::before {
+      &::before {
         content: "";
         width: rem(16);
         height: rem(16);
@@ -134,6 +140,9 @@
   &__arrow {
     width: rem(110);
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: rem(68.25);
     img {
       width: 100%;
       height: 100%;
@@ -142,6 +151,9 @@
   &__ok {
     width: 50%;
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: rem(48.75);
     img {
       width: 100%;
       height: 100%;
