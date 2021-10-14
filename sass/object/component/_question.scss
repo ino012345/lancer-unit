@@ -11,8 +11,8 @@
 /*アコーディオン全体*/
 .accordion-area{
   list-style: none;
-  width: 65%;
-  max-width: 900px;
+  width: 100%;
+  max-width: rem(832);
   margin-left: auto;
   margin-right: auto;
   margin-top: rem(60);

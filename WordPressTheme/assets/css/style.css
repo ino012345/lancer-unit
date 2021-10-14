@@ -654,16 +654,15 @@ summary {
 	box-shadow: 0 0 0.625rem 0 rgba(0, 160, 233, 0.2);
 	display: flex;
 	justify-content: center;
-	margin: 3.125rem;
-	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3.4375rem;
-	padding-bottom: 1.42188rem;
+	max-width: 52rem;
+	padding-bottom: 1.5625rem;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 	padding-top: 1.875rem;
-	width: 65%;
+	width: 100%;
 }
 
 .benefits__image {
@@ -761,11 +760,6 @@ summary {
 	top: 50%;
 	transform: translateY(-55%);
 	width: 0.6875rem;
-}
-
-.c-test {
-	color: red;
-	font-size: 3.125rem;
 }
 
 .case {
@@ -888,8 +882,9 @@ summary {
 .flow {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 52rem;
 	padding-top: 9.375rem;
-	width: 65%;
+	width: 95%;
 }
 
 .flow__title {
@@ -899,7 +894,7 @@ summary {
 
 .flow__explain {
 	font-size: 0.875rem;
-	font-weight: medium;
+	font-weight: 600;
 	line-height: 1.75;
 	margin-top: 2.0625rem;
 }
@@ -919,15 +914,15 @@ summary {
 }
 
 .flow__item--third {
-	margin-top: 5.3125rem;
+	margin-top: 5.625rem;
 }
 
 .flow__item--fourth {
-	margin-top: 5.3125rem;
+	margin-top: 5.625rem;
 }
 
 .flow__item--fifth {
-	margin-top: 5rem;
+	margin-top: 5.3125rem;
 }
 
 .flow__contents {
@@ -940,7 +935,7 @@ summary {
 	height: auto;
 	margin-right: 1.4375rem;
 	position: relative;
-	width: 6vw;
+	width: 4.75rem;
 }
 
 .flow__number img {
@@ -950,18 +945,18 @@ summary {
 
 .flow__number::before {
 	background-color: #070749;
-	bottom: 170%;
 	content: "";
-	height: 175%;
+	height: 6.4375rem;
 	left: 50%;
 	position: absolute;
+	top: -8.3125rem;
 	transform: translateX(-50%);
 	width: 0.0625rem;
 }
 
 .flow__number--first {
 	margin-right: 2.0625rem;
-	width: 5vw;
+	width: 4.0625rem;
 }
 
 .flow__number--first::before {
@@ -1005,7 +1000,7 @@ summary {
 .flowBtn--faq {
 	bottom: 6.25rem;
 	height: 2.98594rem;
-	left: calc(50% + 470px);
+	right: 1.25rem;
 	width: 3.79844rem;
 }
 
@@ -1017,7 +1012,7 @@ summary {
 .flowBtn--top {
 	bottom: 1.25rem;
 	height: 3.79844rem;
-	left: calc(50% + 470px);
+	right: 1.25rem;
 	width: 3.79844rem;
 }
 
@@ -1037,9 +1032,10 @@ summary {
 .footer__inner {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 52rem;
 	padding-bottom: 4.5rem;
 	padding-top: 6.5625rem;
-	width: 65%;
+	width: 100%;
 }
 
 .footer__logos {
@@ -1150,8 +1146,11 @@ summary {
 }
 
 .fv {
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 5rem;
 	position: relative;
+	width: 100%;
 }
 
 .fv__body {
@@ -1195,7 +1194,6 @@ summary {
 .fv__btn--left {
 	background-color: #fff;
 	border: 0.1875rem solid #070749;
-	color: #070749;
 	margin-right: 1rem;
 	padding-left: 0.9375rem;
 }
@@ -1228,15 +1226,15 @@ summary {
 	height: 5rem;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 80rem;
 	padding-left: 4.0625rem;
 	padding-top: 1.25rem;
 	width: 100%;
 }
 
 .header__logo {
+	display: block;
 	height: auto;
-	width: 15%;
+	width: 11.875rem;
 }
 
 .header__logo img {
@@ -1298,10 +1296,6 @@ summary {
 .introduction__card--left {
 	color: #00a0e9;
 	margin-right: 1.625rem;
-}
-
-.introduction__card__right {
-	color: #070749;
 }
 
 .introduction__cardTitle {
@@ -1433,9 +1427,10 @@ summary {
 .job {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 52rem;
 	padding-bottom: 5.9375rem;
 	padding-top: 11.75rem;
-	width: 65%;
+	width: 100%;
 }
 
 .job__title {
@@ -1507,10 +1502,12 @@ summary {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2.25rem;
+	max-width: 52rem;
 	padding-bottom: 1.875rem;
 	padding-left: 2.03125rem;
+	padding-right: 2.03125rem;
 	padding-top: 1.625rem;
-	width: 65%;
+	width: 90%;
 }
 
 .news__head {
@@ -1546,9 +1543,8 @@ summary {
 
 .news__date {
 	color: #808080;
-	color: #333;
 	font-size: 0.875rem;
-	font-weight: medium;
+	font-weight: 600;
 	margin-right: 0.8125rem;
 }
 
@@ -1574,8 +1570,9 @@ summary {
 .pasture {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 52rem;
 	padding-top: 9.75rem;
-	width: 65%;
+	width: 100%;
 }
 
 .pasture__title {
@@ -1593,7 +1590,8 @@ summary {
 .pasture__image {
 	height: auto;
 	margin-top: 0.8125rem;
-	width: 47%;
+	max-width: 43.75rem;
+	width: 100%;
 }
 
 .pasture__image img {
@@ -1626,8 +1624,8 @@ summary {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3.75rem;
-	max-width: 900px;
-	width: 65%;
+	max-width: 52rem;
+	width: 100%;
 }
 
 .accordion-area li {
@@ -1729,8 +1727,9 @@ summary {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2.5rem;
+	max-width: 52rem;
 	padding-bottom: 6.875rem;
-	width: 66.666%;
+	width: 100%;
 }
 
 .seminar__card {
@@ -1839,7 +1838,8 @@ summary {
 .unit {
 	margin-left: auto;
 	margin-right: auto;
-	width: 65%;
+	max-width: 52rem;
+	width: 100%;
 }
 
 .unit__title {
@@ -1896,7 +1896,8 @@ summary {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3.25rem;
-	width: 54%;
+	max-width: 43.125rem;
+	width: 90%;
 }
 
 .works__company img {
@@ -1955,11 +1956,6 @@ html {
 	padding-left: 20px;
 	padding-right: 20px;
 	width: 100%;
-}
-
-.c-test {
-	color: green;
-	font-size: 1.875rem;
 }
 
 }

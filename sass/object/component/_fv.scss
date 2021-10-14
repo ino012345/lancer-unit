@@ -1,6 +1,9 @@
 .fv {
   position: relative;
   margin-top: rem(80);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   &__body {
     position: absolute;
     left: rem(70);
@@ -35,7 +38,6 @@
     &--left {
       border: rem(3) solid #070749;
       background-color: #fff;
-      color: #070749;
       margin-right: rem(16);
       padding-left: rem(15);
     }

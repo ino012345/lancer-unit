@@ -5,7 +5,8 @@
   padding-left: rem(20);
   color: #fff;
   &__inner {
-    width: 65%;
+    width: 100%;
+    max-width: rem(832);
     margin-right: auto;
     margin-left: auto;
     padding-top: rem(105);

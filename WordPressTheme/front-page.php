@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="fv">
+  <section class="fv" id="top">
     <div class="fv__body">
       <p class="fv__catch">企業専属のクリエイターとして<br>継続的に仕事を受託するマッチングサービス</p>
       <figure class="fv__title">
@@ -506,7 +506,7 @@
     </ul>
   </section>
   <a href="#question" class="flowBtn flowBtn--faq"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-FAQ@2x.png" alt="FAQへのボタン"></a>
-  <a href="#" class="flowBtn flowBtn--top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-TOP@2x-100.jpg" alt="TOPへのボタン"></a>
+  <a href="#top" class="flowBtn flowBtn--top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-TOP@2x-100.jpg" alt="TOPへのボタン"></a>
 </main>
 
 

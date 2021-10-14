@@ -1,6 +1,7 @@
 .flow {
   padding-top: rem(150);
-  width: 65%;
+  max-width: rem(832);
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   &__title {
@@ -10,7 +11,7 @@
   &__explain {
     margin-top: rem(33);
     font-size: rem(14);
-    font-weight: medium;
+    font-weight: 600;
     line-height: ( 35 / 20 );
   }
   &__list {
@@ -24,13 +25,13 @@
       margin-top: rem(52);
     }
     &--third {
-      margin-top: rem(85);
+      margin-top: rem(90);
     }
     &--fourth {
-      margin-top: rem(85);
+      margin-top: rem(90);
     }
     &--fifth {
-      margin-top: rem(80);
+      margin-top: rem(85);
     }
   }
   &__contents {
@@ -39,7 +40,7 @@
     margin-right: rem(68);
   }
   &__number {
-    width: 6vw;
+    width: rem(76);
     height: auto;
     margin-right: rem(23);
     position: relative;
@@ -50,15 +51,15 @@
     &::before {
       content: "";
       width: rem(1);
-      height: 175%;
+      height: rem(103);
       background-color: #070749;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 170%;
+      top: rem(-133);
     }
     &--first {
-      width: 5vw;
+      width: rem(65);
       margin-right: rem(33);
       &::before {
         content: none;

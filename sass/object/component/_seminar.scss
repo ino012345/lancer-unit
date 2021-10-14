@@ -14,7 +14,8 @@
   }
   &__cardUnit {
     display: flex;
-    width: 66.666%;
+    width: 100%;
+    max-width: rem(832);
     margin-right: auto;
     margin-left: auto;
     padding-bottom: rem(110);
