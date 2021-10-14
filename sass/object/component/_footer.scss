@@ -1,23 +1,42 @@
 .footer {
+  width: 100%;
+  background-color: #070749;
+  padding-right: rem(20);
+  padding-left: rem(20);
+  color: #fff;
+  &__inner {
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: rem(105);
+    padding-bottom: rem(72);
+  }
   &__logos {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: rem(25);
+    border-bottom: 1px solid #fff;
   }
   &__lancer {
     width: rem(283);
-    height: auto;
+    height: rem(30);
     img {
       width: 100%;
       height: 100%;
+      object-fit: contain;
     }
   }
   &__digital {
     display: flex;
+    align-items: center;
   }
   &__digitalName {
     font-size: rem(14);
-    font-weight: medium;
+    font-weight: 400;
+    margin-right: rem(23);
   }
-  &__difgitalLogo {
+  &__digitalLogo {
     width: rem(205);
     height: auto;
     img {
@@ -27,12 +46,24 @@
   }
   &__contents {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(25);
   }
-  &__nav {
+  &__navList {
     display: flex;
+    flex-wrap: wrap;
+    width: rem(450);
+    margin-bottom: rem(-15);
   }
   &__navItem {
     font-size: rem(12);
+    width: rem(150);
+    margin-bottom: rem(15);
+    a {
+      display: block;
+      width: 100%;
+    }
   }
   &__relatedLogos {
     width: rem(309);
@@ -44,20 +75,27 @@
   }
   &__information {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: rem(72);
   }
   &__sns {
     display: flex;
   }
   &__snsLink {
     width: rem(20);
-    height: auto;
+    height: 100%;
+    margin-right: rem(30);
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
+    }
+    &--facebook {
+      margin-top: rem(-2);
     }
   }
   &__copyright {
     font-size: rem(10);
-    font-weight: medium;
+    font-weight: 400;
   }
 }

@@ -388,7 +388,7 @@
         </div>
     </div>
   </section>
-  <section class="question">
+  <section class="question" id="question">
     <h1 class="question__title">よくあるご質問</h1>
     <ul class="accordion-area">
       <li>
@@ -505,7 +505,7 @@
       </li>
     </ul>
   </section>
-  <a href="#" class="flowBtn flowBtn--faq"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-FAQ@2x-100.jpg" alt="FAQへのボタン"></a>
+  <a href="#question" class="flowBtn flowBtn--faq"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-FAQ@2x.png" alt="FAQへのボタン"></a>
   <a href="#" class="flowBtn flowBtn--top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-TOP@2x-100.jpg" alt="TOPへのボタン"></a>
 </main>
 

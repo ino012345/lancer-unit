@@ -2,7 +2,7 @@
   <div class="footer__inner">
     <div class="footer__logos">
       <figure class="footer__lancer">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white@2x.png" alt="LANCER UNIT ロゴ">
       </figure>
       <div class="footer__digital">
         <p class="footer__digitalName">デジタルハリウッド株式会社</p>
@@ -52,7 +52,7 @@
     </div>
     <div class="footer__information">
       <ul class="footer__sns">
-        <li class="footer__snsLink">
+        <li class="footer__snsLink footer__snsLink--facebook">
           <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook@2x.png" alt="facebook"></a>
         </li>
         <li class="footer__snsLink">

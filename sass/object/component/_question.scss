@@ -1,5 +1,6 @@
 .question {
   padding-top: rem(110);
+  padding-bottom: rem(290);
   &__title {
     font-size: rem(30);
     font-weight: bold;
@@ -52,10 +53,18 @@
   background-repeat: no-repeat;
 }
 .title::after{    
-  top:48%;
-  left: 15px;
-  width: rem(25.35);
-  height: rem(46.15);
+  top:50%;
+  right: rem(15);
+  transform: translateY(-50%);
+  width: rem(34);
+  height: rem(34);
+  background-image: url(../img/plus@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title.close::after{
+  background-image: url(../img/minus@2x.png);
 }
 
 /*アコーディオンで現れるエリア*/

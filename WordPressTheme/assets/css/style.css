@@ -998,49 +998,114 @@ summary {
 	width: 100%;
 }
 
-.footer__logos {
-	display: flex;
+.flowBtn {
+	position: fixed;
 }
 
-.footer__lancer {
-	height: auto;
-	width: 17.6875rem;
+.flowBtn--faq {
+	bottom: 6.25rem;
+	height: 2.98594rem;
+	left: calc(50% + 470px);
+	width: 3.79844rem;
 }
 
-.footer__lancer img {
+.flowBtn--faq img {
 	height: 100%;
 	width: 100%;
 }
 
+.flowBtn--top {
+	bottom: 1.25rem;
+	height: 3.79844rem;
+	left: calc(50% + 470px);
+	width: 3.79844rem;
+}
+
+.flowBtn--top img {
+	height: 100%;
+	width: 100%;
+}
+
+.footer {
+	background-color: #070749;
+	color: #fff;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	width: 100%;
+}
+
+.footer__inner {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 4.5rem;
+	padding-top: 6.5625rem;
+	width: 65%;
+}
+
+.footer__logos {
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1.5625rem;
+}
+
+.footer__lancer {
+	height: 1.875rem;
+	width: 17.6875rem;
+}
+
+.footer__lancer img {
+	-o-object-fit: contain;
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}
+
 .footer__digital {
+	align-items: center;
 	display: flex;
 }
 
 .footer__digitalName {
 	font-size: 0.875rem;
-	font-weight: medium;
+	font-weight: 400;
+	margin-right: 1.4375rem;
 }
 
-.footer__difgitalLogo {
+.footer__digitalLogo {
 	height: auto;
 	width: 12.8125rem;
 }
 
-.footer__difgitalLogo img {
+.footer__digitalLogo img {
 	height: 100%;
 	width: 100%;
 }
 
 .footer__contents {
+	align-items: center;
 	display: flex;
+	justify-content: space-between;
+	padding-top: 1.5625rem;
 }
 
-.footer__nav {
+.footer__navList {
 	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -0.9375rem;
+	width: 28.125rem;
 }
 
 .footer__navItem {
 	font-size: 0.75rem;
+	margin-bottom: 0.9375rem;
+	width: 9.375rem;
+}
+
+.footer__navItem a {
+	display: block;
+	width: 100%;
 }
 
 .footer__relatedLogos {
@@ -1054,7 +1119,10 @@ summary {
 }
 
 .footer__information {
+	align-items: flex-end;
 	display: flex;
+	justify-content: space-between;
+	margin-top: 4.5rem;
 }
 
 .footer__sns {
@@ -1062,18 +1130,23 @@ summary {
 }
 
 .footer__snsLink {
-	height: auto;
+	height: 100%;
+	margin-right: 1.875rem;
 	width: 1.25rem;
 }
 
 .footer__snsLink img {
-	height: 100%;
+	height: auto;
 	width: 100%;
+}
+
+.footer__snsLink--facebook {
+	margin-top: -0.125rem;
 }
 
 .footer__copyright {
 	font-size: 0.625rem;
-	font-weight: medium;
+	font-weight: 400;
 }
 
 .fv {
@@ -1536,6 +1609,7 @@ summary {
 }
 
 .question {
+	padding-bottom: 18.125rem;
 	padding-top: 6.875rem;
 }
 
@@ -1595,10 +1669,18 @@ summary {
 }
 
 .title::after {
-	height: 2.88437rem;
-	left: 15px;
-	top: 48%;
-	width: 1.58438rem;
+	background-image: url(../img/plus@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 2.125rem;
+	right: 0.9375rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2.125rem;
+}
+
+.title.close::after {
+	background-image: url(../img/minus@2x.png);
 }
 
 /*アコーディオンで現れるエリア*/
