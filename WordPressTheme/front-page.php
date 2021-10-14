@@ -67,7 +67,9 @@
         <h1 class="about__title">ランサーユニットとは</h1>
         <p class="about__explain">デジタルハリウッドの卒業生や在校生を中心としたフリーランス複数名で企業専用ユニットを作り、いつでもユニット内のクリエイターへ企業から案件を発注できるサービスです。<br>クリエイターは、デジタルハリウッドxWORKSサポートのもと、企業と直接業務委託契約を締結し、案件発生ごとに制作→納品→請求まで直接やりとりをしていただきます。<br><br><span class="small">※デジハリONLINE（Adobeマスター講座）含む</span></p>
       </div>
-      <div class="about__video"></div>
+      <div class="about__video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7W9zieFp-oM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
   <section class="unit">
