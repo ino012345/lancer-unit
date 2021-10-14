@@ -338,48 +338,54 @@
     <h1 class="seminar__title">セミナー</h1>
     <p class="seminar__explain">フリーランス、副業の方向けに、定期的にセミナーを開催しております。</p>
     <div class="seminar__cardUnit">
-      <div class="seminar__card">
+      <a class="seminar__card">
         <figure class="seminar__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
         </figure>
-        <p class="seminar__badge">WEBデザイン</p>
-        <p class="seminar__name">BLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入…るBLOGタイトルを入れるタイト…を入れるBLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入れる</p>
-        <div class="seminar__supplement">
-          <p class="seminar__date">2021/4/30</p>
-          <div class="seminar__tags">
-            <p class="seminar__tag">タグ</p>
-            <p class="seminar__tag">タグ</p>
-          </div>
+        <div class="seminar__body">
+          <p class="seminar__badge">WEBデザイン</p>
+          <p class="seminar__name">BLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入…</p>
+          <div class="seminar__supplement">
+            <p class="seminar__date">2021/4/30</p>
+            <div class="seminar__tags">
+              <p class="seminar__tag">タグ</p>
+              <p class="seminar__tag">タグ</p>
+            </div>
         </div>
-      </div>
-      <div class="seminar__card">
+        </div>
+      </a>
+      <a class="seminar__card">
         <figure class="seminar__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
         </figure>
-        <p class="seminar__badge">WEBデザイン</p>
-        <p class="seminar__name">BLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入…るBLOGタイトルを入れるタイト…を入れるBLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入れる</p>
-        <div class="seminar__supplement">
-          <p class="seminar__date">2021/4/30</p>
-          <div class="seminar__tags">
-            <p class="seminar__tag">タグ</p>
-            <p class="seminar__tag">タグ</p>
+        <div class="seminar__body">
+          <p class="seminar__badge">WEBデザイン</p>
+          <p class="seminar__name">BLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入…</p>
+          <div class="seminar__supplement">
+            <p class="seminar__date">2021/4/30</p>
+            <div class="seminar__tags">
+              <p class="seminar__tag">タグ</p>
+              <p class="seminar__tag">タグ</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
       <div class="seminar__card seminar__card--finish">
         <figure class="seminar__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
         </figure>
-        <p class="seminar__badge">WEBデザイン</p>
-        <p class="seminar__name">BLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入…るBLOGタイトルを入れるタイト…を入れるBLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入れる</p>
-        <div class="seminar__supplement">
-          <p class="seminar__date">2021/4/30</p>
-          <div class="seminar__tags">
-            <p class="seminar__tag">タグ</p>
-            <p class="seminar__tag">タグ</p>
+        <div class="seminar__body">
+          <p class="seminar__badge">WEBデザイン</p>
+          <p class="seminar__name">BLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入…</p>
+          <div class="seminar__supplement">
+            <p class="seminar__date">2021/4/30</p>
+            <div class="seminar__tags">
+              <p class="seminar__tag">タグ</p>
+              <p class="seminar__tag">タグ</p>
+            </div>
           </div>
         </div>
-      </div>
+        </div>
     </div>
   </section>
   <section class="question">

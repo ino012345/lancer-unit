@@ -1,16 +1,20 @@
 .question {
+  padding-top: rem(110);
   &__title {
     font-size: rem(30);
     font-weight: bold;
+    text-align: center;
   }
 }
 
 /*アコーディオン全体*/
 .accordion-area{
   list-style: none;
-  width: 96%;
+  width: 65%;
   max-width: 900px;
-  margin:0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(60);
 }
 
 .accordion-area li{
@@ -18,16 +22,16 @@
 }
 
 .accordion-area section {
-border: 1px solid #ccc;
+  background-color: #edf8fd;
 }
 
 /*アコーディオンタイトル*/
 .title {
   position: relative;/*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size:1rem;
-  font-weight: normal;
-  padding: 3% 3% 3% 50px;
+  font-size:rem(18);
+  font-weight: bold;
+  padding: 3% rem(50) 3% rem(90);
   transition: all .5s ease;
 }
 
@@ -36,38 +40,42 @@ border: 1px solid #ccc;
 .title::after{
   position: absolute;
   content:'';
-  width: 15px;
-  height: 2px;
-  background-color: #333;
-  
 }
 .title::before{
-  top:48%;
-  left: 15px;
-  transform: rotate(0deg);
-  
+  width: rem(18.2);
+  height: rem(33.8);
+  top:50%;
+  left: rem(26);
+  transform: translateY(-50%);
+  background-image: url(../img/question@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .title::after{    
   top:48%;
   left: 15px;
-  transform: rotate(90deg);
-
-}
-
-/*　closeというクラスがついたら形状変化　*/
-
-.title.close::before{
-transform: rotate(45deg);
-}
-
-.title.close::after{
-transform: rotate(-45deg);
+  width: rem(25.35);
+  height: rem(46.15);
 }
 
 /*アコーディオンで現れるエリア*/
 .box {
   display: none;/*はじめは非表示*/
-  background: #f3f3f3;
-  margin:0 3% 3% 3%;
-  padding: 3%;
+  background: #edf8fd;
+  padding: 0 rem(80) 5% rem(90);
+  position: relative;
+  font-weight: 600;
+  font-size: rem(14);
+  &::before {
+    content: "";
+    width: rem(25.35);
+    height: rem(46.15);
+    position: absolute;
+    top:0;
+    left: rem(22);
+    background-image: url(../img/answer@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
 }

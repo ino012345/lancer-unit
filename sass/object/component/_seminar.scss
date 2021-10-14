@@ -1,21 +1,31 @@
 .seminar {
+  padding-top: rem(97);
+
   &__title {
     font-size: rem(30);
     font-weight: bold;
+    text-align: center;
   }
   &__explain {
     font-size: rem(14);
-    font-weight: medium;
+    font-weight: 600;
+    text-align: center;
+    margin-top: rem(15);
   }
   &__cardUnit {
     display: flex;
     width: 66.666%;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: rem(110);
+    margin-top: rem(40);
+    border-bottom: 1px solid #070749;
   }
   &__card {
+    display: block;
     width: 32%;
     margin-right: 2%;
+    border: rem(1) solid #979797;
     &:last-child {
       margin-right: 0;
     }
@@ -24,12 +34,15 @@
       &::before {
         content: "";
         width: rem(118);
-        height: auto;
+        height: rem(15);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-image: url(../img/finish@2x.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 99;
       }
       &::after {
         content: "";
@@ -50,19 +63,35 @@
       height: 100%;
     }
   }
+  &__body {
+    padding: rem(12) rem(10) rem(15) rem(10);
+  }
   &__badge {
+    display: inline-block;
     font-size: rem(12);
     font-weight: bold;
+    padding-right: rem(15);
+    padding-left: rem(15);
+    line-height: rem(18);
+    border-radius: rem(10);
+    background-color: #070749;
+    color: #fff;
   }
   &__name {
     font-size: rem(15.6);
     font-weight: bold;
     line-height: ( 36 / 24 );
+    margin-top: rem(3);
+  }
+  &__supplement {
+    display: flex;
+    margin-top: rem(10);
   }
   &__date {
     font-size: rem(12);
     font-weight: bold;
     color: #808080;
+    margin-right: rem(16);
   }
   &__tags {
     display: flex;
@@ -70,6 +99,14 @@
   &__tag {
     font-size: rem(12);
     font-weight: bold;
-    color: #070749;
+    margin-right: rem(10);
+    line-height: rem(16);
+    padding-right: rem(23);
+    padding-left: rem(23);
+    border: rem(1) solid #070749;
+    border-radius: rem(10);
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
