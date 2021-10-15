@@ -1,11 +1,29 @@
 .header {
+  background-color: #fff;
+  z-index: 999;
+  transition: all .5s;
   &__inner {
     width: 100%;
-    height: rem(80);
-    padding-top: rem(20);
-    padding-left: rem(65);
+    padding: rem(20) rem(65) rem(5) rem(65);
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+    &--sp {
+      display: none;
+      padding: rem(15) rem(20);
+      position: relative;
+    }
+    @include mq(sp) {
+      &--pc {
+        display: none;
+      }
+      &--sp {
+        display: flex;
+      }
+    } 
   }
   &__logo {
     display: block;
@@ -16,4 +34,121 @@
       height: 100%;
     }
   }
+  &__btn {
+    font-size: rem(14);
+    font-weight: bold;
+    padding-right: rem(10);
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    padding-left: rem(15);
+    border: rem(3) solid #070749;
+    background-color: #fff;
+    margin-bottom: rem(10);
+    display: none;
+  }
+  &__spLogo {
+    width: rem(175);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__activeLogo {
+    display: none;
+  }
+  &__spNav {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    z-index: 999;
+    transition: all .5s;
+    background-color: #fff;
+    &.active {
+      right: 0;
+    }
+  }
+  &__navItem {
+    background-color: #e6e6ed;
+    border-bottom: 1px solid #9b948f;
+  }
+  &__navLink {
+    display: block;
+    padding: rem(15) rem(20);
+    position: relative;
+    font-size: rem(16);
+    font-weight: bold;
+    &::after {
+      content: ">";
+      font-size: rem(16);
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: rem(30);
+    }
+  }
+  &.fixed {
+    border-bottom: 1px solid #070749;
+  }
+  &.active {
+    background : linear-gradient(180deg, rgba(0, 0, 180, 1) 0%, rgba(7, 7, 73, 1) 80%);
+  }
+}
+
+.openbtn{
+	position: relative;
+	cursor: pointer;
+  width: rem(25);
+  height:rem(25);
+}
+
+/*ボタン内側*/
+.openbtn span{
+  display: inline-block;
+  transition: all .4s;/*アニメーションの設定*/
+  position: absolute;
+  left: 0;
+  height: 3px;
+  border-radius: 2px;
+	background-color: #070749;
+  width: 100%;
+}
+
+.openbtn span:nth-of-type(1) {
+	top:rem(3);
+}
+
+.openbtn span:nth-of-type(2) {
+	top:rem(11);
+}
+
+.openbtn span:nth-of-type(3) {
+	top:rem(19);
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: rem(4.5);
+    left: 0;
+    transform: translateY(6px) rotate(-45deg);
+    width: 100%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;/*真ん中の線は透過*/
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: rem(16.5);
+    left: 0;
+    transform: translateY(-6px) rotate(45deg);
+    width: 100%;
+}
+
+.openbtn.active span {
+  background-color: #fff;
 }

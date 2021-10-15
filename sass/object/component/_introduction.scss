@@ -1,23 +1,60 @@
 .introduction {
   padding-top: rem(140);
+  width: 100%;
+  max-width: rem(1280);
+  margin-right: auto;
+  margin-left: auto; 
+  position: relative;
+  @include mq(sp) {
+    padding-top: rem(120);
+    padding-right: rem(15);
+    padding-left: rem(15);  
+  } 
+  &::after {
+    content: "";
+    width: rem(777.075);
+    height: rem(480.675);
+    background-image: url(../img/bg1@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: rem(20);
+    left: rem(-163);
+    z-index: -1;
+    @include mq(sp) {
+      content: none;
+    } 
+  }
   &__media {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mq(sp) {
+      flex-direction: column;
+    } 
   }
   &__body {
     margin-right: rem(19);
+    @include mq(sp) {
+      margin-right: 0;
+    } 
   }
   &__title {
     font-size: rem(30);
     font-weight: 800;
     line-height: ( 75 / 45 );
+    @include mq(sp) {
+      font-size: rem(22);
+    }
   }
   &__explain {
     margin-top: rem(35.75);
     font-size: rem(14);
     font-weight: 600;
     line-height: ( 35 / 20 );
+    @include mq(sp) {
+      margin-top: rem(26);
+    } 
   }
   &__image {
     width: 30%;
@@ -26,22 +63,39 @@
       width: 100%;
       height: 100%;
     }
+    @include mq(sp) {
+      width: 100%;
+      margin-top: rem(25);
+    } 
   }
   &__cardUnit {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: rem(26);
+    @include mq(sp) {
+      flex-direction: column;
+    } 
   }
   &__card {
+    background-color: #fff;
     &--left {
       margin-right: rem(26);
       color: #00a0e9;
+      @include mq(sp) {
+        margin-right: 0;
+        margin-bottom: rem(20);
+      }
     }
     width: rem(430);
     box-shadow: 0 0 rem(10) 0 rgba($color: #00a0e9, $alpha: .2);
     padding: rem(26) rem(40);
     border-radius: rem(30);
+    @include mq(sp) {
+      width: 100%;
+      padding-right: rem(15);
+      padding-left: rem(15);
+    } 
   }
   &__cardTitle {
     font-size: rem(24);
@@ -155,5 +209,8 @@
       width: 100%;
       height: 100%;
     }
+    @include mq(sp) {
+      width: 100%;
+    } 
   }
 }

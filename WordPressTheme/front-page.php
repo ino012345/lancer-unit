@@ -68,12 +68,12 @@
         <p class="about__explain">デジタルハリウッドの卒業生や在校生を中心としたフリーランス複数名で企業専用ユニットを作り、いつでもユニット内のクリエイターへ企業から案件を発注できるサービスです。<br>クリエイターは、デジタルハリウッドxWORKSサポートのもと、企業と直接業務委託契約を締結し、案件発生ごとに制作→納品→請求まで直接やりとりをしていただきます。<br><br><span class="small">※デジハリONLINE（Adobeマスター講座）含む</span></p>
       </div>
       <div class="about__video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7W9zieFp-oM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/7W9zieFp-oM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
   <section class="unit">
-    <h1 class="unit__title">オーダーメイドのクリエイティブユニット</h1>
+    <h1 class="unit__title">オーダーメイドの<br>クリエイティブユニット</h1>
     <p class="unit__explain">ビジネスにおいて、Webや動画などのクリエイティブ制作が急遽必要となる場面は多くあります。<br>しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。そこで、いつでも複数名のクリエイターを選べて継続的にいつでも発注できる「ランサーユニット」サービスの提供をしています。</p>
     <figure class="unit__image">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/unit@2x-100.jpg" alt="約9万人の様々な業種で活躍する経験豊富な所属クリエイターの中から自社で必要なスキルを持ったクリエイターを最大3名選んでユニットを形成します">
@@ -156,12 +156,14 @@
     </ul>
   </section>
   <section class="pasture">
-    <h1 class="pasture__title">ユニットでの受発注</h1>
-    <p class="pasture__explain">専用のグループウェアで企業と繋がり、相談から依頼までクライアントと直接やりとりする事ができます。<br>クライアントとは、業務委託契約（案件ベースの請負型・時給基準の準委任型）を締結いただきます。</p>
-    <figure class="pasture__image">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/illust_3.png" alt="ユニットでの受発注イメージ">
-    </figure>
-    <p class="pasture__attention">※企業側はランサーユニットの月額利用料が発生します<br>※ユニットメンバーは一切費用必要ありません</p>
+    <div class="pasture__inner">
+      <h1 class="pasture__title">ユニットでの受発注</h1>
+      <p class="pasture__explain">専用のグループウェアで企業と繋がり、相談から依頼までクライアントと直接やりとりする事ができます。<br>クライアントとは、業務委託契約（案件ベースの請負型・時給基準の準委任型）を締結いただきます。</p>
+      <figure class="pasture__image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/illust_3.png" alt="ユニットでの受発注イメージ">
+      </figure>
+      <p class="pasture__attention">※企業側はランサーユニットの月額利用料が発生します<br>※ユニットメンバーは一切費用必要ありません</p>
+    </div>
   </section>
   <section class="job">
     <h1 class="job__title">クリエイター業種は問いません</h1>
@@ -509,6 +511,9 @@
   </section>
   <a href="#question" class="flowBtn flowBtn--faq"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-FAQ@2x.png" alt="FAQへのボタン"></a>
   <a href="#top" class="flowBtn flowBtn--top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-TOP@2x-100.jpg" alt="TOPへのボタン"></a>
+  <div class="flowBtn flowBtn__wrap">
+    <a href="#" class="btn btn--flow">クリエイター登録をする</a>
+  </div>
 </main>
 
 

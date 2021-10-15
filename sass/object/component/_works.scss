@@ -1,5 +1,10 @@
 .works {
   padding-top: rem(97.5);
+  @include mq(sp) {
+    padding-top: rem(170);
+    padding-right: rem(15);
+    padding-left: rem(15);
+  } 
   &__title {
     font-size: rem(30);
     font-weight: bold;
@@ -9,6 +14,12 @@
     .small {
       font-size: rem(15);
     }
+    @include mq(sp) {
+      font-size: rem(22);
+      .small {
+        font-size: rem(12);
+      }
+    } 
   }
   &__explain {
     font-size: rem(16);
@@ -16,9 +27,12 @@
     text-align: center;
     letter-spacing: 0.05em;
     margin-top: rem(15);
+    @include mq(sp) {
+      font-size: rem(14);
+    } 
   }
   &__company {
-    width: 90%;
+    width: 100%;
     max-width: rem(690);
     height: auto;
     margin-top: rem(52);

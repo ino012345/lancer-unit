@@ -2,10 +2,19 @@
   background-color: #f2fafe;
   padding-top: rem(68);
   padding-bottom: rem(62);
+  @include mq(sp) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    padding-right: rem(15);
+    padding-left: rem(15);
+  } 
   &__title {
     font-size: rem(30);
     font-weight: bold;
     text-align: center;
+    @include mq(sp) {
+      font-size: rem(22);
+    }
   }
   &__inner {
     margin-top: rem(36);
@@ -20,6 +29,11 @@
     padding-right: rem(32.5);
     border-radius: rem(25);
     background-color: #fff;
+    @include mq(sp) {
+      width: 100%;
+      padding-right: rem(20);
+      padding-left: rem(20);
+    } 
   }
   &__head {
     font-size: rem(20);

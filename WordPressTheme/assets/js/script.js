@@ -44,6 +44,19 @@ jQuery(function() {
 		return false;
 	});
 
+	/* ハンバーガーメニュー */
+	$(".openbtn").click(function () {
+    $(this).toggleClass('active');
+		if($(this).hasClass("active")) {
+			$('.header__activeLogo').fadeIn(300);
+			$('.header__normalLogo').fadeOut(0);
+		}else {
+			$('.header__activeLogo').fadeOut(0);
+			$('.header__normalLogo').fadeIn(300);
+		}
+    $(".header, .header__spNav").toggleClass('active');
+	});
+
 	/* アコーディオンパネル */
 	//アコーディオンをクリックした時の動作
 	$('.title').on('click', function() {//タイトル要素をクリックしたら
@@ -58,6 +71,24 @@ jQuery(function() {
 			$(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
 			$(findElm).slideDown(500);//アコーディオンを開く
 		}
+	});
+
+	/* フローボタン */
+	//スクロールすると上部に固定させるための設定を関数でまとめる
+	function FixedAnime() {
+		var scroll = $(window).scrollTop();
+		if (scroll > 0){
+				$('.header, .flowBtn__wrap').addClass('fixed');//fixedというクラス名を付与
+				$('.header__btn, .flowBtn--faq, .flowBtn--top').fadeIn(300);
+			}else{//それ以外は
+				$('.header, .flowBtn__wrap').removeClass('fixed');//fixedというクラス名を除去
+				$('.header__btn, .flowBtn--faq, .flowBtn--top').fadeOut(300);
+			}
+	}
+
+	// 画面をスクロールをしたら動かしたい場合の記述
+	$(window).scroll(function () {
+		FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
 	});
 
 	/* 電話リンク */

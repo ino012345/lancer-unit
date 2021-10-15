@@ -1,10 +1,19 @@
 .question {
   padding-top: rem(110);
   padding-bottom: rem(290);
+  @include mq(sp) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    padding-right: rem(15);
+    padding-left: rem(15);  
+  } 
   &__title {
     font-size: rem(30);
     font-weight: bold;
     text-align: center;
+    @include mq(sp) {
+      font-size: rem(22);
+    }
   }
 }
 
@@ -32,8 +41,14 @@
   cursor: pointer;
   font-size:rem(18);
   font-weight: bold;
-  padding: 3% rem(50) 3% rem(90);
+  padding: 3% rem(57.5) 3% rem(90);
   transition: all .5s ease;
+  @include mq(sp) {
+    font-size: rem(14);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: rem(5);
+  }
 }
 
 /*アイコンの＋と×*/

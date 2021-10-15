@@ -18,6 +18,9 @@
     align-items: center;
     padding-bottom: rem(25);
     border-bottom: 1px solid #fff;
+    @include mq(sp) {
+      flex-direction: column;
+    }
   }
   &__lancer {
     width: rem(283);
@@ -27,15 +30,27 @@
       height: 100%;
       object-fit: contain;
     }
+    @include mq(sp) {
+      width: rem(189);
+      height: rem(20);
+      margin-left: 0;
+      margin-right: auto;
+    }
   }
   &__digital {
     display: flex;
     align-items: center;
+    @include mq(sp) {
+      margin-top: rem(25);
+    }
   }
   &__digitalName {
     font-size: rem(14);
     font-weight: 400;
     margin-right: rem(23);
+    @include mq(sp) {
+      font-size: rem(12);
+    }
   }
   &__digitalLogo {
     width: rem(205);
@@ -44,18 +59,29 @@
       width: 100%;
       height: 100%;
     }
+    @include mq(sp) {
+      width: rem(140);
+    }
   }
   &__contents {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: rem(25);
+    @include mq(sp) {
+      flex-direction: column;
+    } 
   }
   &__navList {
     display: flex;
     flex-wrap: wrap;
     width: rem(450);
     margin-bottom: rem(-15);
+    @include mq(sp) {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    } 
   }
   &__navItem {
     font-size: rem(12);
@@ -65,6 +91,10 @@
       display: block;
       width: 100%;
     }
+    @include mq(sp) {
+      font-size: rem(11);
+      width: 33.333%;
+    } 
   }
   &__relatedLogos {
     width: rem(309);
@@ -72,6 +102,10 @@
     img {
       width: 100%;
       height: 100%;
+    }
+    @include mq(sp) {
+      width: 100%;
+      margin-top: rem(25);
     }
   }
   &__information {

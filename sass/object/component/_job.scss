@@ -5,9 +5,34 @@
   max-width: rem(832);
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  @include mq(sp) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    padding-right: rem(15);
+    padding-left: rem(15);
+  } 
+  &::after {
+    content: "";
+    width: rem(619.775);
+    height: rem(383.5);
+    background-image: url(../img/bg5@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: rem(78);
+    left: rem(-325);
+    z-index: -1;
+    @include mq(sp) {
+      content: none;
+    } 
+  }
   &__title {
     font-size: rem(30);
     font-weight: bold;
+    @include mq(sp) {
+      font-size: rem(22);
+    }
   }
   &__explain {
     font-size: rem(14);
@@ -27,6 +52,16 @@
     &:nth-of-type(3n) {
       margin-right: 0;
     }
+    @include mq(sp) {
+      width: 48%;
+      margin-right: 4%;
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+      &:nth-of-type(3) {
+        margin-right: 4%;
+      }
+    } 
   }
   &__image {
     width: 100%;
@@ -38,6 +73,9 @@
       object-position: top;
       border-radius: rem(25);
     }
+    @include mq(sp) {
+      height: rem(120);
+    } 
   }
   &__name {
     font-size: rem(16);
