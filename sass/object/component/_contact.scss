@@ -9,6 +9,7 @@
     font-weight: bold;
     text-align: center;
   }
+  
   &__english {
     font-size: rem(19.5);
     font-family: Futura, 'Century Gothic', sans-serif;
@@ -88,6 +89,17 @@
     font-size: 0;
     color: #333;
   }
+  &__confirm {
+    max-width: rem(520);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: rem(75);
+    color: #333;
+    font-weight: bold;
+    font-size: rem(16);
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  }
   input, select, textarea {
     background-color: #edf8fd;
     border: none;
@@ -117,6 +129,18 @@
     &--notOne {
       margin-top: rem(30);
     }
+    &.need {
+      display: inline-block;
+      position: relative;
+      &::after {
+        content: "*";
+        font-size: rem(10);
+        color: #ff0000;
+        position: absolute;
+        top: 0;
+        right: rem(-10);
+      }
+    }
   }
   &__detail {
     font-size: rem(12);
@@ -124,12 +148,15 @@
   }
   &__separate {
     display: flex;
-    input {
+    &-inner {
       width: 48%;
       margin-right: 4%;
       &:last-child {
         margin-right: 0;
       }
+    }
+    input {
+      width: 100%;
     }
     select {
       width: 48%;
@@ -168,6 +195,18 @@
     }
     &.beige {
       background-color: #c69c6d;
+    }
+    .need {
+      display: inline-block;
+      position: relative;
+      &::after {
+        content: "*";
+        font-size: rem(10);
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: rem(-5);
+      }
     }
   }
   &__select {
@@ -240,18 +279,76 @@
   }
   &__privacyWrap {
     margin-top: rem(90);
-    margin-bottom: rem(40);
     display: flex;
     justify-content: center;
     align-items: center;
+    input[type="checkbox"] + span::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    input[type="checkbox"]:checked + span::before {
+      border-color: #070749;
+    }
+    input[type="checkbox"] + span::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    input[type="checkbox"]:checked + span::after {
+      background-color: #070749;
+    }
+    input[type="checkbox"]:checked + span {
+      color: #070749;
+    }
   }
   &__privacyText {
     font-size: rem(16);
     font-weight: bold;
-    margin-left: rem(-15);
     a {
       color: #666666;
       text-decoration: underline;
     }
   }
+  &__submitWrap {
+    text-align: center;
+    position: relative;
+    margin-top: rem(50);
+    &::after {
+      content: "";
+      width: rem(11);
+      height: rem(18);
+      background-image: url(../img/arrow-btn@2x.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-55%);
+      right: rem(90);
+    }
+    input {
+      display: block;
+      width: rem(425);
+      height: rem(70);
+      padding: 0;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: rem(20);
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-align: center;
+      line-height: rem(70);
+      background-color: #070749;
+      border-radius: rem(35);
+      color: #fff;
+      transition: all .3s;
+      &.return {
+        background-color: #808080;
+      }
+      &:disabled {
+        background-color: #808080;
+      }
+    }
+  }
+}
+.mw_wp_form .error {
+  font-size: rem(12) !important;
 }

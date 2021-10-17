@@ -915,6 +915,84 @@ summary {
 	background-color: #dc0a78;
 }
 
+.complete {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 52rem;
+	padding: 5.3125rem 0.9375rem 3.125rem 0.9375rem;
+	width: 100%;
+}
+
+.complete__title {
+	font-size: 2.23438rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.complete__text {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 2.03125rem;
+	text-align: center;
+}
+
+.complete__explain {
+	font-size: 0.875rem;
+	font-weight: bold;
+	margin-top: 3.75rem;
+	text-align: center;
+}
+
+.complete__infos {
+	display: flex;
+	justify-content: center;
+}
+
+.complete__infoWrap {
+	margin-right: 3.75rem;
+	margin-top: 3.75rem;
+	padding-left: 2.5rem;
+	position: relative;
+}
+
+.complete__infoWrap a {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.complete__infoWrap::after {
+	background-image: url(../img/tel@4x.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 1.42188rem;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.17813rem;
+}
+
+.complete__infoWrap:last-child {
+	margin-right: 0;
+}
+
+.complete__infoWrap:last-child::after {
+	background-image: url(../img/mail@4x.png);
+	height: 1.09688rem;
+	width: 1.52344rem;
+}
+
+.complete__linkWrap {
+	margin-top: 3.75rem;
+	text-align: center;
+}
+
+.complete__link {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
 .contact {
 	margin-left: auto;
 	margin-right: auto;
@@ -1017,6 +1095,18 @@ summary {
 	width: 100%;
 }
 
+.contact__confirm {
+	color: #333;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4.6875rem;
+	max-width: 32.5rem;
+	width: 100%;
+}
+
 .contact input,
 .contact select,
 .contact textarea {
@@ -1058,6 +1148,20 @@ summary {
 	margin-top: 1.875rem;
 }
 
+.contact__label.need {
+	display: inline-block;
+	position: relative;
+}
+
+.contact__label.need::after {
+	color: #ff0000;
+	content: "*";
+	font-size: 0.625rem;
+	position: absolute;
+	right: -0.625rem;
+	top: 0;
+}
+
 .contact__detail {
 	font-size: 0.75rem;
 	font-weight: 600;
@@ -1067,13 +1171,17 @@ summary {
 	display: flex;
 }
 
-.contact__separate input {
+.contact__separate-inner {
 	margin-right: 4%;
 	width: 48%;
 }
 
-.contact__separate input:last-child {
+.contact__separate-inner:last-child {
 	margin-right: 0;
+}
+
+.contact__separate input {
+	width: 100%;
 }
 
 .contact__separate select {
@@ -1120,6 +1228,20 @@ summary {
 
 .contact__color.beige {
 	background-color: #c69c6d;
+}
+
+.contact__color .need {
+	display: inline-block;
+	position: relative;
+}
+
+.contact__color .need::after {
+	color: #fff;
+	content: "*";
+	font-size: 0.625rem;
+	position: absolute;
+	right: -0.3125rem;
+	top: 0;
 }
 
 .contact__select {
@@ -1209,19 +1331,88 @@ summary {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 2.5rem;
 	margin-top: 5.625rem;
+}
+
+.contact__privacyWrap input[type="checkbox"] + span::before {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.contact__privacyWrap input[type="checkbox"]:checked + span::before {
+	border-color: #070749;
+}
+
+.contact__privacyWrap input[type="checkbox"] + span::after {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.contact__privacyWrap input[type="checkbox"]:checked + span::after {
+	background-color: #070749;
+}
+
+.contact__privacyWrap input[type="checkbox"]:checked + span {
+	color: #070749;
 }
 
 .contact__privacyText {
 	font-size: 1rem;
 	font-weight: bold;
-	margin-left: -0.9375rem;
 }
 
 .contact__privacyText a {
 	color: #666666;
 	text-decoration: underline;
+}
+
+.contact__submitWrap {
+	margin-top: 3.125rem;
+	position: relative;
+	text-align: center;
+}
+
+.contact__submitWrap::after {
+	background-image: url(../img/arrow-btn@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 1.125rem;
+	position: absolute;
+	right: 5.625rem;
+	top: 50%;
+	transform: translateY(-55%);
+	width: 0.6875rem;
+}
+
+.contact__submitWrap input {
+	background-color: #070749;
+	border-radius: 2.1875rem;
+	color: #fff;
+	display: block;
+	font-size: 1.25rem;
+	font-weight: bold;
+	height: 4.375rem;
+	letter-spacing: 0.05em;
+	line-height: 4.375rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	text-align: center;
+	transition: all .3s;
+	width: 26.5625rem;
+}
+
+.contact__submitWrap input.return {
+	background-color: #808080;
+}
+
+.contact__submitWrap input:disabled {
+	background-color: #808080;
+}
+
+.mw_wp_form .error {
+	font-size: 0.75rem !important;
 }
 
 .flow {

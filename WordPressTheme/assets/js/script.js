@@ -86,6 +86,35 @@ jQuery(function() {
 			}
 	}
 
+	/* フォームボタン制御 */
+	$(function(){
+    /* ページ読み込み時のボタン制御処理 */
+    if ($('input[id="agree-1"]:checked').val()) {
+        $('.submit-button').prop("disabled", false);
+    } else {
+        $('.submit-button').prop("disabled", true);
+    }
+
+    /* 同意のチェックボックスをクリックした際のボタン制御処理 */
+    $('#agree-1').click(function() {
+        if ($('input[id="agree-1"]:checked').val()) {
+            $('.submit-button').prop("disabled", false);
+        } else {
+            $('.submit-button').prop("disabled", true);
+        }
+    });
+
+    /**
+     * 確認画面用（確認画面のボタンは常に押せる状態にしておく）
+     * ※この書き方は苦肉の策感がすごいする・・・
+     */
+    if (location.pathname === '/confirm/') {
+        $('.submit-button').prop("disabled", false);
+				$('.contact__privacyWrap').css("display", "none");
+    }
+
+	});
+
 	// 画面をスクロールをしたら動かしたい場合の記述
 	$(window).scroll(function () {
 		FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
