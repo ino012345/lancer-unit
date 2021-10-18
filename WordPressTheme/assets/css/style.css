@@ -929,6 +929,10 @@ summary {
 	text-align: center;
 }
 
+.complete__title span {
+	display: inline-block;
+}
+
 .complete__text {
 	font-size: 1rem;
 	font-weight: bold;
@@ -1162,6 +1166,10 @@ summary {
 	top: 0;
 }
 
+.contact__label br {
+	display: none;
+}
+
 .contact__detail {
 	font-size: 0.75rem;
 	font-weight: 600;
@@ -1172,12 +1180,11 @@ summary {
 }
 
 .contact__separate-inner {
-	margin-right: 4%;
 	width: 48%;
 }
 
-.contact__separate-inner:last-child {
-	margin-right: 0;
+.contact__separate-inner:first-child {
+	margin-right: 4%;
 }
 
 .contact__separate input {
@@ -1245,6 +1252,7 @@ summary {
 }
 
 .contact__select {
+	align-items: center;
 	background-color: #fafafa;
 	display: flex;
 	flex-wrap: wrap;
@@ -2847,6 +2855,46 @@ html {
 
 .case__categoryItem {
 	width: 7.1875rem;
+}
+
+.complete__title {
+	font-size: 1.5625rem;
+}
+
+.complete__infoWrap {
+	margin-right: 1.875rem;
+	padding-left: 1.875rem;
+}
+
+.complete__infoWrap a {
+	font-size: 0.9375rem;
+}
+
+.contact__title {
+	font-size: 1.5625rem;
+}
+
+.contact__phaseList::before {
+	width: 16.25rem;
+}
+
+.contact__phaseItem {
+	margin-right: 4.6875rem;
+}
+
+.contact__label br {
+	display: block;
+}
+
+.contact__select .mwform-checkbox-field-text {
+	font-size: 0.625rem;
+}
+
+.contact__submitWrap input {
+	font-size: 1rem;
+	height: 2.8125rem;
+	line-height: 2.8125rem;
+	width: 18.75rem;
 }
 
 .flow {

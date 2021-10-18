@@ -8,7 +8,7 @@
       </figure>
       <div class="fv__btnWrap">
         <a href="#" class="fv__btn fv__btn--left">法人のお客様 ></a>
-        <a href="#" class="fv__btn fv__btn--right">クリエイター登録 ></a>
+        <a href="<?php echo home_url('contact'); ?>" class="fv__btn fv__btn--right">クリエイター登録 ></a>
       </div>
     </div>
     <figure class="fv__mainImage">

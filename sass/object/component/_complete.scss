@@ -8,6 +8,12 @@
     font-size: rem(35.75);
     font-weight: bold;
     text-align: center;
+    @include mq(sp) {
+      font-size: rem(25);
+    }
+    span {
+      display: inline-block;
+    }
   }
   &__text {
     font-size: rem(16);
@@ -30,9 +36,16 @@
     margin-right: rem(60);
     margin-top: rem(60);
     position: relative;
+    @include mq(sp) {
+      margin-right: rem(30);
+      padding-left: rem(30);
+    } 
     a {
       font-size: rem(16);
       font-weight: bold;
+      @include mq(sp) {
+        font-size: rem(15);
+      } 
     }
     &::after {
       content: "";

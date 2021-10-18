@@ -8,6 +8,9 @@
     font-size: rem(35.75);
     font-weight: bold;
     text-align: center;
+    @include mq(sp) {
+      font-size: rem(25);
+    } 
   }
   
   &__english {
@@ -34,6 +37,9 @@
       left: 50%;
       transform: translateX(-50%);
       top: rem(-26);
+      @include mq(sp) {
+        width: rem(260);
+      } 
     }
   }
   &__phaseItem {
@@ -58,6 +64,9 @@
         background-color: #070749;
       }
     }
+    @include mq(sp) {
+      margin-right: rem(75);
+    } 
     &:last-child {
       margin-right: 0;
     }
@@ -141,6 +150,12 @@
         right: rem(-10);
       }
     }
+    br {
+      display: none;
+      @include mq(sp) {
+        display: block;
+      } 
+    }
   }
   &__detail {
     font-size: rem(12);
@@ -150,9 +165,8 @@
     display: flex;
     &-inner {
       width: 48%;
-      margin-right: 4%;
-      &:last-child {
-        margin-right: 0;
+      &:first-child {
+        margin-right: 4%;
       }
     }
     input {
@@ -214,6 +228,7 @@
     width: 100%;
     padding: rem(12);
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     .mwform-checkbox-field.horizontal-item {
       display: block;
@@ -231,6 +246,9 @@
       }
       &::after {
         left: 4px !important;
+      }
+      @include mq(sp) {
+        font-size: rem(10);
       }
     }
     input[type="checkbox"]:checked + span::before {
@@ -346,6 +364,12 @@
       &:disabled {
         background-color: #808080;
       }
+      @include mq(sp) {
+        width: rem(300);
+        height: rem(45);
+        font-size: rem(16);
+        line-height: rem(45);
+      } 
     }
   }
 }

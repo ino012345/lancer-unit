@@ -2,7 +2,7 @@
 
 <main>
   <section class="complete">
-    <h1 class="complete__title">お問い合わせありがとうございます</h1>
+    <h1 class="complete__title">お問い合わせ<span>ありがとうございます</span></h1>
     <p class="complete__text">後日、弊社のサービス担当者より連絡させていただきますのでもうしばらくお待ちください。</p>
     <div class="contact__phase">
       <ul class="contact__phaseList">
