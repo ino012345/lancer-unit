@@ -1,3 +1,4 @@
+new WOW().init();
 // ローディング判定
 jQuery(function ($) {
 jQuery(window).on("load", function() {
@@ -106,9 +107,12 @@ jQuery(function() {
 
     /**
      * 確認画面用（確認画面のボタンは常に押せる状態にしておく）
-     * ※この書き方は苦肉の策感がすごいする・・・
      */
     if (location.pathname === '/confirm/') {
+        $('.submit-button').prop("disabled", false);
+				$('.contact__privacyWrap').css("display", "none");
+    }
+    if (location.pathname === '/revise-confirm/') {
         $('.submit-button').prop("disabled", false);
 				$('.contact__privacyWrap').css("display", "none");
     }

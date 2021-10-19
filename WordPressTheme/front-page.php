@@ -7,11 +7,11 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="ランサーユニット">
       </figure>
       <div class="fv__btnWrap">
-        <a href="#" class="fv__btn fv__btn--left">法人のお客様 ></a>
-        <a href="<?php echo home_url('contact'); ?>" class="fv__btn fv__btn--right">クリエイター登録 ></a>
+        <a href="https://lancerunit.jp/" class="fv__btn fv__btn--left">法人のお客様 ></a>
+        <a href="<?php echo home_url('apply'); ?>" class="fv__btn fv__btn--right">クリエイター登録 ></a>
       </div>
     </div>
-    <figure class="fv__mainImage">
+    <figure class="fv__mainImage wow fadeInRight">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_236629968_Preview.jpeg" alt="パソコンを操作している画像">
     </figure>
   </section>
@@ -305,7 +305,7 @@
         </div>
       </div>
     </div>
-    <a href="#" class="btn">導入事例一覧はこちら</a>
+    <a href="https://lancerunit.jp/cases/" class="btn">導入事例一覧はこちら</a>
   </section>
   <section class="benefits">
     <h1 class="benefits__title">ランサーユニットメンバー特典</h1>
@@ -318,7 +318,7 @@
         <p class="benefits__head">FREENANCE for デジタルハリウッド</p>
         <p class="benefits__detail">通常の「FREENANCE」と同様に『FREENANCE振込専⽤⼝座』を提供するほか、『FREENANCEあんしん補償』による仕事中の事故や納品物の⽋陥を原因とする事故の補償（最⾼5,000万円）や情報漏えい、著作権侵害などフリーランス特有の事故補償（最⾼500万円）が無料付帯します。<br>また、「FREENANCE for デジタルハリウッド」の『即⽇払い』では、デジタルハリウッドの卒業⽣であることから個⼈が特定されていること、デジタルハリウッドが取引の選定の仲介に⼊り企業がフリーランサーと取引を始めるという2点から、『即⽇払い』の利⽤においては通常よりも低い⼿数料でご利⽤（ランサーユニット案件のみ）いただくことができます。</p>
         <div class="benefits__linkWrap">
-          <a href="#" class="benefits__link">登録・口座開設はこちら</a>
+          <a href="https://dhw.freenance.net/signup" class="benefits__link">登録・口座開設はこちら</a>
         </div>
       </div>
     </div>
@@ -333,7 +333,7 @@
         <p class="benefits__head">DMMバーチャルオフィス</p>
         <p class="benefits__detail">DMMバーチャルオフィスは、業界最安水準の月あたり2,530円（年間契約一括払いの場合）から基本プランの契約が可能です。<br>オフィスなしでビジネスをスタートしたい個人事業主やフリーランスに向け、ブランドイメージを考慮した都内一等地にある洗練された物件住所と、「スマホにOffice!」をコンセプトとしたスマホ1つでオフィス機能を実現する、利便性の高い会員サイトを提供しています。<br>今後、「ランサーユニット」を中心としたメンバーは通常よりも割引が適用された料金で、DMMバーチャルオフィスのサービスを利用することが可能となります。</p>
         <div class="benefits__linkWrap">
-          <a href="#" class="benefits__link">登録はこちら</a>
+          <a href="https://virtualoffice.dmm.com" class="benefits__link">登録はこちら</a>
         </div>
       </div>
     </div>
@@ -407,7 +407,7 @@
         <section>
           <h3 class="title">どうやって登録すれば良いですか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>ランサーユニットクリエイターアンケートに回答ください<br><a href="http://bit.ly/dhlu_creatorques">http://bit.ly/dhlu_creatorques</a><br>回答にかかる時間は、5分程度です<br><br>ご希望にあった案件が発生した際に候補者として優先的にご紹介させていただきます<br>登録情報の変更やポートフォリオのアップデートは修正フォームより回答ください<br><a href="https://pro.form-mailer.jp/fms/ed445127205342">https://pro.form-mailer.jp/fms/ed445127205342</a></p>
           </div>
         </section>
       </li>
@@ -415,7 +415,7 @@
         <section>
           <h3 class="title">登録後に費用はかかりますか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>一切不要です</p>
           </div>
         </section>
       </li>
@@ -423,7 +423,7 @@
         <section>
           <h3 class="title">登録後に必要な事はありますか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>あなたにマッチする案件が発生した場合に、スカウトが届きますのでご連絡をお待ちください<br>メールでのご連絡となりますので、迷惑メール等に格納されてないか確認ください<br><br>送信アドレス：xworksinfo@dhw.co.jp<br>件名：・・様へ、ランサーユニット案件のご紹介<br><br>スカウトの他に、希望者を公募してメンバーを選考する案件もあります。その場合はデジハリ卒業生向け 求人プラットフォーム「Job Style Search（JSS）」で求人案件がされます<br>ログイン<br><a href="https://xworks.dhw.co.jp">https://xworks.dhw.co.jp</a><br>ログインIDPWが不明な方<br><a href="https://xworks.dhw.co.jp/index.php?pg=inquiry.form&start=true">https://xworks.dhw.co.jp/index.php?pg=inquiry.form&start=true</a></p>
           </div>
         </section>
       </li>
@@ -431,7 +431,7 @@
         <section>
           <h3 class="title">スカウトが届いたら、どうすれば良いですか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>問合せ企業のヒアリングシートにある要件を確認いただき、対応可否と面談希望日を返答ください</p>
           </div>
         </section>
       </li>
@@ -439,7 +439,7 @@
         <section>
           <h3 class="title">選考されユニットメンバーになった場合の契約に教えてください</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>企業との直接契約となります<br><br>契約先：企業<br>契約形態：業務委託（請負 or 準委任）<br>契約期間：ランサーユニット契約プラン（3ヶ月 or 6ヶ月 or 12ヶ月）<br>※企業の要件変更によってメンバー変更となる場合がありますので、予めご了承ください</p>
           </div>
         </section>
       </li>
@@ -447,7 +447,7 @@
         <section>
           <h3 class="title">複数企業のランサーユニットメンバーになることは可能でしょうか</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>可能です。</p>
           </div>
         </section>
       </li>
@@ -455,7 +455,8 @@
         <section>
           <h3 class="title">価格や納期などの交渉、案件を受けないことは可能でしょうか?</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>価格や納期について交渉可能です。案件が受けられない場合があることも企業様には理解していただいておりますが、<br>企業の専属フリーランスという位置づけなので可能な限りの対応をお願いできれば幸いです
+</p>
           </div>
         </section>
       </li>
@@ -463,7 +464,7 @@
         <section>
           <h3 class="title">案件を受けることになった場合には発注書はいただけますか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>はい。対フリーランスに対しては下請法で発注書発行の義務があります<br>企業様に専用のグループウェア「pasture」を提供し、発行をお願いしています</p>
           </div>
         </section>
       </li>
@@ -471,7 +472,7 @@
         <section>
           <h3 class="title">請求書に源泉徴収は記載しますか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>源泉徴収を控除することは企業に義務付けられていますが、請求書への記載の有無については企業様にご確認ください。</p>
           </div>
         </section>
       </li>
@@ -479,7 +480,7 @@
         <section>
           <h3 class="title">企業との連絡はどのようになりますか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>専用のグループウェア「pasture」でのDMでのやりとりとなりますが、コミュニケーションを円滑に図るために、mail、slack, chatworkなど企業様と同意の上ご利用ください</p>
           </div>
         </section>
       </li>
@@ -487,7 +488,8 @@
         <section>
           <h3 class="title">ユニットメンバー同士で一緒に案件を受けることはありますか？</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>案件によりますが、デザインとコーディングなどタスクが別で一緒のプロジェクトに入る可能性はあります。
+</p>
           </div>
         </section>
       </li>
@@ -495,7 +497,8 @@
         <section>
           <h3 class="title">ユニットメンバー同士で接点はありますか</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>今後、ユニットメンバー同士の情報共有やナレッジシェアなどできるよう検討しています
+</p>
           </div>
         </section>
       </li>
@@ -503,7 +506,7 @@
         <section>
           <h3 class="title">法人名義での契約や、チームで作業を分担して受注することはできますか</h3>
           <div class="box">
-            <p>内容が入ります。</p>
+            <p>可能ですが、面談への参加や案件受注時の窓口はランサーユニットに登録している方がご対応ください。 　</p>
           </div>
         </section>
       </li>
@@ -512,7 +515,7 @@
   <a href="#question" class="flowBtn flowBtn--faq"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-FAQ@2x.png" alt="FAQへのボタン"></a>
   <a href="#top" class="flowBtn flowBtn--top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-TOP@2x-100.jpg" alt="TOPへのボタン"></a>
   <div class="flowBtn flowBtn__wrap">
-    <a href="#" class="btn btn--flow">クリエイター登録をする</a>
+    <a href="<?php echo home_url('apply'); ?>" class="btn btn--flow">クリエイター登録をする</a>
   </div>
 </main>
 

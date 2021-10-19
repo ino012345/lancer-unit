@@ -14,7 +14,10 @@
     text-align: center;
     @include mq(sp) {
       font-size: rem(22);
-    } 
+    }
+    @include mq(pc) {
+      font-size: rem(33);
+    }
   }
   &__explain {
     font-size: rem(14);

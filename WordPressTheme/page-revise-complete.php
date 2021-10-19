@@ -2,8 +2,8 @@
 
 <main>
   <section class="complete">
-    <h1 class="complete__title">お問い合わせ<span>ありがとうございます</span></h1>
-    <p class="complete__text">後日、弊社のサービス担当者より連絡させていただきますのでもうしばらくお待ちください。</p>
+    <h1 class="complete__title">ご連絡<span>ありがとうございます</span></h1>
+    <p class="complete__text">ご登録内容を修正させていただきます。</p>
     <div class="contact__phase">
       <ul class="contact__phaseList">
         <li class="contact__phaseItem current">入力画面</li>
@@ -11,7 +11,7 @@
         <li class="contact__phaseItem current">送信完了</li>
       </ul>
     </div>
-    <p class="complete__explain">お問い合わせ受付完了メールをお送りいたしましたのでご確認ください。<br>受付完了メールが届かない場合は、以下の電話もしくはメールにてお知らせください。</p>
+    <p class="complete__explain">受付完了メールをお送りいたしましたのでご確認ください。<br>受付完了メールが届かない場合は、以下の電話もしくはメールにてお知らせください。</p>
     <div class="complete__infos">
       <div class="complete__infoWrap">
         <a href="tel:03-5289-9223">03-5289-9223</a>

@@ -5,6 +5,9 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  @include mq(pc) {
+    max-width: rem(870);
+  }
   @include mq(sp) {
     padding-top: rem(120);
     padding-right: rem(15);
@@ -30,7 +33,10 @@
     font-weight: bold;
     @include mq(sp) {
       font-size: rem(22);
-    } 
+    }
+    @include mq(pc) {
+      font-size: rem(33);
+    }
   }
   &__explain {
     margin-top: rem(33);

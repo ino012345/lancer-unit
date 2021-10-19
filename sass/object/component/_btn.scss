@@ -38,5 +38,12 @@
     height: rem(45);
     font-size: rem(16);
     line-height: rem(45);
-  } 
+    border-radius: rem(23);
+  }
+  @include mq(pc) {
+    font-size: rem(22);
+    width: rem(440);
+    height: rem(60);
+    line-height: rem(60);
+  }
 }

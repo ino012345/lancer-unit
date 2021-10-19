@@ -37,6 +37,9 @@
     @include mq(sp) {
       font-size: rem(22);
     }
+    @include mq(pc) {
+      font-size: rem(33);
+    }
   }
   &__explain {
     margin-top: rem(29);
@@ -52,6 +55,9 @@
     img {
       width: 100%;
       height: 100%;
+    }
+    @include mq(pc) {
+      max-width: rem(750);
     }
   }
   &__attention {

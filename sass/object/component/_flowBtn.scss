@@ -17,6 +17,9 @@
       right: rem(10);
       bottom: rem(145);
     }
+    @include mq(pc) {
+      bottom: rem(195);
+    }
   }
   &--top {
     width: rem(60.775);
@@ -34,10 +37,13 @@
       right: rem(10);
       bottom: rem(89);
     }
+    @include mq(pc) {
+      bottom: rem(115);
+    }
   }
   &__wrap {
-    padding-top: rem(15);
-    padding-bottom: rem(15);
+    padding-top: rem(22);
+    padding-bottom: rem(22);
     width: 100%;
     left: 0;
     bottom: -100%;
