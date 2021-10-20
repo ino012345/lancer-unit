@@ -18,7 +18,7 @@
   <section class="works">
     <h1 class="works__title">ランサーユニット導入企業<span class="small">（一部抜粋）</span></h1>
     <p class="works__explain">ランサーユニットは業界業種問わず様々な企業に利用されています！</p>
-    <figure class="works__company">
+    <figure class="works__company wow fadeInUp" data-wow-offset="75">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company@2x.png" alt="ランサーユニット導入企業の一部">
     </figure>
   </section>
@@ -28,12 +28,12 @@
         <h1 class="introduction__title">ランサーユニットが目指す<br>企業とフリーランス<br>クリエイターの新しいカタチ</h1>
         <p class="introduction__explain">企業が抱えるクリエイティブ課題に対して必要なスキルを持ったメンバーを<br>ユニットとしてアサイン。フリーランスクリエイターが強みを持って集結し、<br>企業の課題解決をするマッチングサービス事業を展開しています。</p>
       </div>
-      <figure class="introduction__image">
+      <figure class="introduction__image wow fadeInUp" data-wow-offset="75" data-wow-delay="1.0s">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/introduction@2x-100.jpg" alt="企業とフリーランスクリエイターの繋がりのイメージ">
       </figure>
     </div>
     <div class="introduction__cardUnit">
-      <div class="introduction__card introduction__card--left">
+      <div class="introduction__card introduction__card--left wow fadeInUp" data-wow-offset="75" data-wow-delay="0.75s">
         <p class="introduction__cardTitle">企業の課題</p>
         <p class="introduction__cardProblem introduction__cardProblem--left">クリエイティブの外注が不安</p>
         <ul class="introduction__problemList">
@@ -43,7 +43,7 @@
         </ul>
         <p class="introduction__cardExplain introduction__cardExplain--left">ビジネスにおいて、Web や動画などのクリエイティブ制作が急きょ必要となる場面は多くあります。しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。<br><br></p>
       </div>
-      <div class="introduction__card introduction__card--right">
+      <div class="introduction__card introduction__card--right wow fadeInUp" data-wow-offset="75" data-wow-delay="1.0s">
         <p class="introduction__cardTitle">クリエイターの想い</p>
         <p class="introduction__cardProblem introduction__cardProblem--right">フリーランスとして自由に働きたい</p>
         <ul class="introduction__problemList">
@@ -75,7 +75,7 @@
   <section class="unit">
     <h1 class="unit__title">オーダーメイドの<br>クリエイティブユニット</h1>
     <p class="unit__explain">ビジネスにおいて、Webや動画などのクリエイティブ制作が急遽必要となる場面は多くあります。<br>しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。そこで、いつでも複数名のクリエイターを選べて継続的にいつでも発注できる「ランサーユニット」サービスの提供をしています。</p>
-    <figure class="unit__image">
+    <figure class="unit__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".25s">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/unit@2x-100.jpg" alt="約9万人の様々な業種で活躍する経験豊富な所属クリエイターの中から自社で必要なスキルを持ったクリエイターを最大3名選んでユニットを形成します">
     </figure>
   </section>
@@ -93,7 +93,7 @@
             <p class="flow__detail">対応領域や自己PR、ポートフォリオ、実績などクリエイター情報をご入力ください。</p>
           </div>
         </div>
-        <figure class="flow__image">
+        <figure class="flow__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/01-image@2x-100.jpg" alt="クリエイター登録イメージ">
         </figure>
       </li>
@@ -107,7 +107,7 @@
             <p class="flow__detail">企業からのオファー、事務局からスカウトメールを送ります。案件内容をご確認ください。</p>
           </div>            
         </div>
-        <figure class="flow__image">
+        <figure class="flow__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/02-image@2x-100.jpg" alt="スカウトもしくは募集イメージ">
         </figure>
       </li>
@@ -121,7 +121,7 @@
             <p class="flow__detail">企業と案件内容について面談を実施します。<br>お互いにミスマッチがないか確認を行います。<br><br><span class="small">※ZOOMでのオンライン面談</span></p>
           </div>            
         </div>
-        <figure class="flow__image">
+        <figure class="flow__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/03-image@2x-100.jpg" alt="面談イメージ">
         </figure>
       </li>
@@ -135,7 +135,7 @@
             <p class="flow__detail">面談後、企業の課題やお悩み解決を一緒に実行できるメンバーだとご判断いただきましたら契約書類を発行します。<br><br><span class="small">※企業との直接契約</span></p>
           </div>          
         </div>
-        <figure class="flow__image">
+        <figure class="flow__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/04-image@2x-100.jpg" alt="契約イメージ">
         </figure>
       </li>
@@ -149,7 +149,7 @@
             <p class="flow__detail">契約後、実際の業務を開始します。その後は企業と連携し、運用をおこなってください。</p>
           </div>          
         </div>
-        <figure class="flow__image">
+        <figure class="flow__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/05-image@2x-100.jpg" alt="導入イメージ">
         </figure>
       </li>
@@ -159,7 +159,7 @@
     <div class="pasture__inner">
       <h1 class="pasture__title">ユニットでの受発注</h1>
       <p class="pasture__explain">専用のグループウェアで企業と繋がり、相談から依頼までクライアントと直接やりとりする事ができます。<br>クライアントとは、業務委託契約（案件ベースの請負型・時給基準の準委任型）を締結いただきます。</p>
-      <figure class="pasture__image">
+      <figure class="pasture__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/illust_3.png" alt="ユニットでの受発注イメージ">
       </figure>
       <p class="pasture__attention">※企業側はランサーユニットの月額利用料が発生します<br>※ユニットメンバーは一切費用必要ありません</p>
@@ -171,37 +171,37 @@
 ご自身の得意スキルはもちろん、チーム/ネットワークでカバーできる業務範囲まで登録可能です。</p>
     <ul class="job__imageList">
       <li class="job__imageItem">
-        <figure class="job__image">
+        <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_313345888_Preview.jpeg" alt="Webデザインイメージ">
         </figure>
         <p class="job__name">Webデザイン</p>
       </li>
       <li class="job__imageItem">
-        <figure class="job__image">
+        <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".6s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_234816836_Preview.jpeg" alt="Webコーディングイメージ">
         </figure>
         <p class="job__name">Webコーディング</p>
       </li>
       <li class="job__imageItem">
-        <figure class="job__image">
+        <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".7s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_114104662_Preview.jpeg" alt="イラストレーターイメージ">
         </figure>
         <p class="job__name">イラストレーター</p>
       </li>
       <li class="job__imageItem">
-        <figure class="job__image">
+        <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_206582313_Preview.jpeg" alt="グラフィックデザインイメージ">
         </figure>
         <p class="job__name">グラフィックデザイン</p>
       </li>
       <li class="job__imageItem">
-        <figure class="job__image">
+        <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".6s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_15828296.jpeg" alt="動画撮影・編集イメージ">
         </figure>
         <p class="job__name">動画撮影・編集</p>
       </li>
       <li class="job__imageItem">
-        <figure class="job__image">
+        <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".7s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_424740311_Preview.jpeg" alt="ディレクターイメージ">
         </figure>
         <p class="job__name">ディレクター</p>
@@ -310,7 +310,7 @@
   <section class="benefits">
     <h1 class="benefits__title">ランサーユニットメンバー特典</h1>
     <p class="benefits__explain">デジタルハリウッドの卒業⽣向けに、フリーランサー⽀援の提携プログラムを開始しています。</p>
-    <div class="benefits__media">
+    <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
       <figure class="benefits__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/202005_KV.jpg" alt="FREENANCE for デジタルハリウッド ロゴ">
       </figure>
@@ -325,7 +325,7 @@
     <div class="benefits__registerWrap">
       <a href="#" class="benefits__register">新規会員登録＆即日支払いフローマニュアルを確認する ＞</a>
     </div>
-    <div class="benefits__media">
+    <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
       <figure class="benefits__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vo_ogp_1200_630.png" alt="DMMバーチャルオフィス紹介画像">
       </figure>
