@@ -211,52 +211,7 @@
   <section class="news">
     <h1 class="news__title">ランサーユニット案件情報</h1>
     <div class="news__inner">
-      <p class="news__head">新着案件</p>
-      <ul class="news__list">
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-      </ul>
-      <p class="news__head">新着業務委託案件</p>
-      <ul class="news__list">
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-        <li class="news__item">
-          <p class="news__badge">new!</p>
-          <p class="news__date">2021.09.00</p>
-          <p class="news__link"><a href="#">そのほかWeb　【トランスコスモス：名古屋】MAプランナー＜実務未経験OK＞</a></p>
-        </li>
-      </ul>
+      <iframe style="border:none" src="https://xworks.dhw.co.jp/new_contents"></iframe>
     </div>
     <p class="news__attention">※案件情報の閲覧には、<a href="#">xWORKS Job Style Search （JSS）</a>のアカウント（登録無料）が必要です</p>
     <a href="#" class="btn">他の求人情報を見る</a>
@@ -310,7 +265,7 @@
   <section class="benefits">
     <h1 class="benefits__title">ランサーユニットメンバー特典</h1>
     <p class="benefits__explain">デジタルハリウッドの卒業⽣向けに、フリーランサー⽀援の提携プログラムを開始しています。</p>
-    <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
+    <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".3s">
       <figure class="benefits__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/202005_KV.jpg" alt="FREENANCE for デジタルハリウッド ロゴ">
       </figure>
@@ -325,7 +280,7 @@
     <div class="benefits__registerWrap">
       <a href="#" class="benefits__register">新規会員登録＆即日支払いフローマニュアルを確認する ＞</a>
     </div>
-    <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
+    <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".3s">
       <figure class="benefits__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vo_ogp_1200_630.png" alt="DMMバーチャルオフィス紹介画像">
       </figure>
