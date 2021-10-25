@@ -1269,8 +1269,10 @@ summary {
 .contact__select .mwform-checkbox-field-text {
 	font-size: 0.78125rem;
 	font-weight: 600;
+	line-height: 1.2;
 	margin: 0;
 	padding-left: 1.75rem;
+	text-align: left;
 }
 
 .contact__select .mwform-checkbox-field-text::before {
