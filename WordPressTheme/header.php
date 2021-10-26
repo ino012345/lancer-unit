@@ -1,6 +1,3 @@
-<?php
-require_once( dirname(dirname( __FILE__ )) . '/wp-load.php' );
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
