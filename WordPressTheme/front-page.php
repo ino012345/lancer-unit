@@ -218,7 +218,7 @@
   </section>
   <section class="case">
     <h1 class="case__title">導入事例</h1>
-    <div class="case__cardUnit">
+    <!-- <div class="case__cardUnit">
       <div class="case__card">
         <figure class="case__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
@@ -259,6 +259,50 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="case__cardUnit">
+    <?php
+      global $post;
+      $args = array(
+        'posts_per_page' => 2,
+        'post_type'=> 'cases'
+      );
+      $myposts = get_posts( $args );
+      foreach ( $myposts as $post ) : setup_postdata( $post ); 
+    ?>
+      <div class="case__card">
+        <figure class="case__image">
+          <img src="<?php the_post_thumbnail('size3'); ?>" alt="ABEMA Shopping様画像">
+        </figure>
+        <div class="case__body">
+          <a href="<?php the_permalink() ?>" class="case__text"><?php the_excerpt(); ?></a>
+          <p class="case__industry"><?php the_field('donyu_type'); ?></p>
+          <p class="case__name"><?php the_title(); ?></p>
+          <div class="case__category">
+            <figure class="case__logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
+            </figure>
+            <div class="case__categoryUnit">
+              <?php
+                if ($terms = get_the_terms($post->ID, 'donyu_unit')) {
+                    foreach ( $terms as $term ) {
+                        $term_slug = $term -> slug;
+                        echo ('<div class="case__categoryItem case__categoryItem--') ;
+                        echo esc_html($term_slug) ;
+                        echo ('">') ;
+                        echo esc_html($term->name)  ;
+                        echo ('</div>') ;
+                        }
+                    }
+              ?>
+            </div>
+          </div>
+        </div>
+      </div>
+      <?php
+            endforeach;
+            wp_reset_postdata();
+      ?>
     </div>
     <a href="https://lancerunit.jp/cases/" class="btn">導入事例一覧はこちら</a>
   </section>
