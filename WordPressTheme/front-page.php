@@ -297,23 +297,63 @@
     <h1 class="seminar__title">セミナー</h1>
     <p class="seminar__explain">フリーランス、副業の方向けに、定期的にセミナーを開催しております。</p>
     <div class="seminar__cardUnit">
-      <a class="seminar__card">
+    <?php
+      include_once( ABSPATH . WPINC . '/feed.php' );
+      $feeduri = 'https://lancerunit.jp/category/web/feed/';
+      $rss = fetch_feed($feeduri);
+      if (!is_wp_error($rss)) {
+        $maxitems = $rss->get_item_quantity(3);
+        $rss_items = $rss->get_items( 0, $maxitems );
+      }
+      foreach ( $rss_items as $item ) :
+    ?>
+      <a href="<?php echo $item->get_permalink(); ?>" class="seminar__card">
         <figure class="seminar__image">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
+        <!-- 記事の最初の画像を表示 -->
+        <?php
+          $first_img = '';
+          if ( preg_match( '/<img.+?src=[\'"]([^\'"]+?)[\'"].*?>/msi', $item->get_content(), $matches ) ) {
+            $first_img = $matches[1];
+          }
+        ?>
+          <img src="<?php echo esc_attr( $first_img ); ?>" alt="ABEMA Shopping様画像">
         </figure>
         <div class="seminar__body">
-          <p class="seminar__badge">WEBデザイン</p>
-          <p class="seminar__name">BLOGタイトルを入れるBLOGタイトルを入れるBLOGタイトルを入…</p>
+          <p class="seminar__badge">
+          <!-- カテゴリーを表示 -->
+          <?php
+            if ( $category = $item->get_category() ) {
+              echo esc_html( $category->get_label() );
+            }
+          ?>
+          </p>
+          <!-- 記事のタイトルを表示 -->
+          <?php
+            $title = $item->get_title();
+            if(mb_strlen( $title ) > 100 ):
+          ?>
+          <p class="seminar__name"><?php echo mb_substr( $title,0,100 );?></p>
+          <?php else : ?>
+          <p class="seminar__name"><?php echo $title ;?></p>
+          <?php endif; ?>
           <div class="seminar__supplement">
-            <p class="seminar__date">2021/4/30</p>
+          <?php 
+            $item_date = $item->get_date();
+            $date = date('Y/m/d',strtotime( $item_date ));
+          ?>
+            <p class="seminar__date"><?php echo $date; ?></p>
             <div class="seminar__tags">
               <p class="seminar__tag">タグ</p>
               <p class="seminar__tag">タグ</p>
             </div>
-        </div>
+          </div>
         </div>
       </a>
-      <a class="seminar__card">
+      <?php
+        endforeach;
+        wp_reset_postdata();
+      ?>
+      <!-- <a class="seminar__card">
         <figure class="seminar__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
         </figure>
@@ -344,7 +384,7 @@
             </div>
           </div>
         </div>
-        </div>
+        </div> -->
     </div>
   </section>
   <section class="question" id="question">
