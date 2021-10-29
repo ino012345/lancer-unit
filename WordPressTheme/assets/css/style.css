@@ -654,6 +654,56 @@ summary {
 	width: 100%;
 }
 
+.archive__title {
+	color: #070749;
+	font-size: 1.625rem;
+	font-weight: bold;
+	line-height: 1.25;
+	text-align: center;
+}
+
+.archive__image {
+	height: auto;
+	width: 100%;
+}
+
+.archive__image img {
+	height: 100%;
+	width: 100%;
+}
+
+.archive__body {
+	background-color: #fff;
+}
+
+.archive__singleTitle {
+	color: #070749;
+	font-size: 0.875rem;
+	font-weight: bold;
+	line-height: 1.7;
+}
+
+.archive__badge {
+	color: #070749;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	line-height: 1.5625;
+}
+
+.archive__name {
+	color: #070749;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	line-height: 1.5625;
+}
+
+.archive__date {
+	color: #808080;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	line-height: 1.5625;
+}
+
 .benefits {
 	background-color: #e5f5fd;
 	padding-bottom: 6.0625rem;

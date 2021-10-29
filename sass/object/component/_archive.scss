@@ -1,0 +1,44 @@
+.archive {
+  &__title {
+    font-size: rem(26);
+    line-height: ( 50 / 40 );
+    font-weight: bold;
+    text-align: center;
+    color: #070749;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__body {
+    background-color: #fff;
+  }
+  &__singleTitle {
+    font-size: rem(14);
+    line-height: ( 34 / 20 );
+    font-weight: bold;
+    color: #070749;
+  }
+  &__badge {
+    font-size: rem(11);
+    line-height: ( 25 / 16 );
+    font-weight: 600;
+    color: #070749;
+  }
+  &__name {
+    font-size: rem(11);
+    line-height: ( 25 / 16 );
+    font-weight: 600;
+    color: #070749;
+  }
+  &__date {
+    font-size: rem(11);
+    line-height: ( 25 / 16 );
+    font-weight: 600;
+    color: #808080;
+  }
+}
