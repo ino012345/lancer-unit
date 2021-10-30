@@ -654,12 +654,42 @@ summary {
 	width: 100%;
 }
 
+.archive {
+	margin-top: 5rem;
+	padding-top: 5.9375rem;
+}
+
 .archive__title {
 	color: #070749;
 	font-size: 1.625rem;
 	font-weight: bold;
 	line-height: 1.25;
 	text-align: center;
+}
+
+.archive__inner {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4.46875rem;
+	max-width: 48.75rem;
+	width: 100%;
+}
+
+.archive__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 9.0625rem;
+}
+
+.archive__item {
+	margin-bottom: 2.03125rem;
+	margin-right: 5%;
+	width: 30%;
+}
+
+.archive__item:nth-of-type(3n) {
+	margin-right: 0;
 }
 
 .archive__image {
@@ -674,6 +704,12 @@ summary {
 
 .archive__body {
 	background-color: #fff;
+	margin-top: -1.09375rem;
+	padding-bottom: 1.01563rem;
+	padding-top: 1.625rem;
+	position: relative;
+	width: 88%;
+	z-index: 5;
 }
 
 .archive__singleTitle {
@@ -688,6 +724,7 @@ summary {
 	font-size: 0.6875rem;
 	font-weight: 600;
 	line-height: 1.5625;
+	margin-top: 1.01563rem;
 }
 
 .archive__name {
@@ -702,6 +739,7 @@ summary {
 	font-size: 0.6875rem;
 	font-weight: 600;
 	line-height: 1.5625;
+	margin-top: 1.01563rem;
 }
 
 .benefits {

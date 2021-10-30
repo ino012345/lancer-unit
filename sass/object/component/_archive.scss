@@ -1,10 +1,33 @@
 .archive {
+  padding-top: rem(95);
+  margin-top: rem(80);
   &__title {
     font-size: rem(26);
     line-height: ( 50 / 40 );
     font-weight: bold;
     text-align: center;
     color: #070749;
+  }
+  &__inner {
+    margin-top: rem(71.5);
+    max-width: rem(780);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: rem(145);
+  }
+  &__item {
+    width: 30%;
+    margin-right: 5%;
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+    margin-bottom: rem(32.5);
   }
   &__image {
     width: 100%;
@@ -16,6 +39,12 @@
   }
   &__body {
     background-color: #fff;
+    width: 88%;
+    padding-top: rem(26);
+    padding-bottom: rem(16.25);
+    margin-top: rem(-17.5);
+    z-index: 5;
+    position: relative;
   }
   &__singleTitle {
     font-size: rem(14);
@@ -28,6 +57,7 @@
     line-height: ( 25 / 16 );
     font-weight: 600;
     color: #070749;
+    margin-top: rem(16.25);
   }
   &__name {
     font-size: rem(11);
@@ -40,5 +70,6 @@
     line-height: ( 25 / 16 );
     font-weight: 600;
     color: #808080;
+    margin-top: rem(16.25);
   }
 }
