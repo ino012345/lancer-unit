@@ -1,92 +1,60 @@
 <?php get_header(); ?>
+
 <main>
-  <section class="archive">
+  <section class="archive" id="top">
     <h1 class="archive__title">クリエイターインタビュー</h1>
     <div class="archive__inner">
       <ul class="archive__list">
+        <?php
+          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+          $the_query = new WP_Query( array(
+              'post_status' => 'publish',
+              'paged' => $paged,
+              'posts_per_page' => 9, // 表示件数
+              'orderby' => 'date',
+              'order' => 'DESC'
+          ) );
+
+          if ($the_query->have_posts()) :
+        ?>
+        <?php
+          while ($the_query->have_posts()) : $the_query->the_post();
+        ?>
         <li class="archive__item">
           <figure class="archive__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive-image@4x-100.jpg" alt="">
+            <?php if(has_post_thumbnail()): ?>
+              <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php get_the_title(); ?>">
+            <?php endif; ?>
           </figure>
           <div class="archive__body">
-            <a href="" class="archive__singleTitle">デザイン歴18年。<br>独立開業デザイナーが語る、<br>課題解決のイロハ</a>
-            <p class="archive__badge">株式会社若旅デザイン事務所</p>
-            <p class="archive__name">代表　若旅 宏和</p>
-            <p class="archive__date">2021/00/00</p>
+            <h2 class="archive__singleTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <p class="archive__badge"><?php the_field('badge'); ?></p>
+            <p class="archive__name"><?php the_field('name'); ?></p>
+            <p class="archive__date"><?php the_time('Y/m/n'); ?></p>
           </div>
         </li>
-        <li class="archive__item">
-          <figure class="archive__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive-image@4x-100.jpg" alt="">
-          </figure>
-          <div class="archive__body">
-            <h2 class="archive__singleTitle">デザイン歴18年。<br>独立開業デザイナーが語る、<br>課題解決のイロハ</h2>
-            <p class="archive__badge">株式会社若旅デザイン事務所</p>
-            <p class="archive__name">代表　若旅 宏和</p>
-            <p class="archive__date">2021/00/00</p>
-          </div>
-        </li>
-        <li class="archive__item">
-          <figure class="archive__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive-image@4x-100.jpg" alt="">
-          </figure>
-          <div class="archive__body">
-            <h2 class="archive__singleTitle">デザイン歴18年。<br>独立開業デザイナーが語る、<br>課題解決のイロハ</h2>
-            <p class="archive__badge">株式会社若旅デザイン事務所</p>
-            <p class="archive__name">代表　若旅 宏和</p>
-            <p class="archive__date">2021/00/00</p>
-          </div>
-        </li>
-        <li class="archive__item">
-          <figure class="archive__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive-image@4x-100.jpg" alt="">
-          </figure>
-          <div class="archive__body">
-            <h2 class="archive__singleTitle">デザイン歴18年。<br>独立開業デザイナーが語る、<br>課題解決のイロハ</h2>
-            <p class="archive__badge">株式会社若旅デザイン事務所</p>
-            <p class="archive__name">代表　若旅 宏和</p>
-            <p class="archive__date">2021/00/00</p>
-          </div>
-        </li>
-        <li class="archive__item">
-          <figure class="archive__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive-image@4x-100.jpg" alt="">
-          </figure>
-          <div class="archive__body">
-            <h2 class="archive__singleTitle">デザイン歴18年。<br>独立開業デザイナーが語る、<br>課題解決のイロハ</h2>
-            <p class="archive__badge">株式会社若旅デザイン事務所</p>
-            <p class="archive__name">代表　若旅 宏和</p>
-            <p class="archive__date">2021/00/00</p>
-          </div>
-        </li>
-        <li class="archive__item">
-          <figure class="archive__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive-image@4x-100.jpg" alt="">
-          </figure>
-          <div class="archive__body">
-            <h2 class="archive__singleTitle">デザイン歴18年。<br>独立開業デザイナーが語る、<br>課題解決のイロハ</h2>
-            <p class="archive__badge">株式会社若旅デザイン事務所</p>
-            <p class="archive__name">代表　若旅 宏和</p>
-            <p class="archive__date">2021/00/00</p>
-          </div>
-        </li>
+        <?php endwhile;?>
+        <?php endif; ?>
       </ul>
       <!-- pagenation -->
-      <div class="pagenation">
+      <div class="archive__pagenation">
       <?php 
-      if ($the_query->max_num_pages > 1) {
-          echo paginate_links(array(
-              'base' => get_pagenum_link(1) . '%_%',
-              'format' => 'page/%#%/',
-              'current' => max(1, $paged),
-              'mid_size' => 1,
-              'total' => $the_query->max_num_pages
-          ));
-      }
-      wp_reset_postdata();?>
+        if ($the_query->max_num_pages > 1) {
+            echo paginate_links(array(
+                'base' => get_pagenum_link(1) . '%_%',
+                'format' => 'page/%#%/',
+                'current' => max(1, $paged),
+                'mid_size' => 1,
+                'total' => $the_query->max_num_pages
+            ));
+        }
+        wp_reset_postdata();
+      ?>
       </div>
       <!-- /pagenation -->
     </div>
   </section>
+  <a href="#top" class="flowBtn flowBtn--top interview"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-TOP@2x-100.jpg" alt="TOPへのボタン"></a>
 </main>
+
 <?php get_footer(); ?>

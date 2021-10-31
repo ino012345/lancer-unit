@@ -149,3 +149,16 @@ function my_excerpt_more( $more ) {
 
 }
 add_filter( 'excerpt_more', 'my_excerpt_more' );
+
+function third_image() {
+  global $post, $posts;
+  $third_img = '';
+  ob_start();
+  ob_end_clean();
+  preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $third_img = $matches[1][2];
+  if(empty($third_img)){
+    $third_img = '';
+  }
+  return $third_img;
+}

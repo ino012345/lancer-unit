@@ -1,12 +1,22 @@
 .archive {
   padding-top: rem(95);
+  padding-bottom: rem(145);
   margin-top: rem(80);
+  padding-left: rem(15);
+  padding-right: rem(15);
+  @include mq(sp) {
+    margin-top: rem(75);
+    padding-top: rem(40);
+  }
   &__title {
     font-size: rem(26);
     line-height: ( 50 / 40 );
     font-weight: bold;
     text-align: center;
     color: #070749;
+    @include mq(sp) {
+      font-size: rem(22);
+    }
   }
   &__inner {
     margin-top: rem(71.5);
@@ -17,7 +27,6 @@
   }
   &__list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: rem(145);
   }
@@ -28,6 +37,16 @@
       margin-right: 0;
     }
     margin-bottom: rem(32.5);
+    @include mq(sp) {
+      width: 47%;
+      margin-right: 6%;
+      &:nth-of-type(3n) {
+        margin-right: 6%;
+      }
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
   }
   &__image {
     width: 100%;
@@ -51,6 +70,9 @@
     line-height: ( 34 / 20 );
     font-weight: bold;
     color: #070749;
+    @include mq(sp) {
+      font-size: rem(11);
+    }
   }
   &__badge {
     font-size: rem(11);
@@ -58,12 +80,18 @@
     font-weight: 600;
     color: #070749;
     margin-top: rem(16.25);
+    @include mq(sp) {
+      font-size: rem(10);
+    }
   }
   &__name {
     font-size: rem(11);
     line-height: ( 25 / 16 );
     font-weight: 600;
     color: #070749;
+    @include mq(sp) {
+      font-size: rem(10);
+    }
   }
   &__date {
     font-size: rem(11);
@@ -71,5 +99,29 @@
     font-weight: 600;
     color: #808080;
     margin-top: rem(16.25);
+    @include mq(sp) {
+      font-size: rem(10);
+    }
+  }
+  &__pagenation {
+    text-align: center;
+    .next.page-numbers {
+      display: none;
+    }
+    .page-numbers {
+      padding: rem(10) rem(15);
+      font-size: rem(18);
+      font-weight: bold;
+      border: rem(3) solid #070749;
+      border-radius: rem(10);
+      margin-right: rem(10);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .page-numbers.current {
+      background-color: #070749;
+      color: #fff;
+    }
   }
 }
