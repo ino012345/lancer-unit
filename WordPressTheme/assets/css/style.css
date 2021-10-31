@@ -660,6 +660,7 @@ summary {
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
 	padding-top: 5.9375rem;
+	position: relative;
 }
 
 .archive__title {
@@ -2689,6 +2690,27 @@ summary {
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
 	padding-top: 5.9375rem;
+	position: relative;
+}
+
+.article__bread {
+	display: flex;
+	left: 50%;
+	position: absolute;
+	top: 0.625rem;
+	transform: translateX(-150%);
+}
+
+.article__breadItem {
+	display: block;
+	font-size: 0.75rem;
+	font-weight: bold;
+	margin-right: 0.3125rem;
+	white-space: nowrap;
+}
+
+.article__breadItem:last-child {
+	margin-right: 0;
 }
 
 .article__info {
@@ -3271,8 +3293,8 @@ html {
 }
 
 .archive {
-	margin-top: 4.6875rem;
-	padding-top: 2.5rem;
+	margin-top: 3.4375rem;
+	padding-top: 5rem;
 }
 
 .archive__title {
@@ -3731,6 +3753,15 @@ html {
 .article {
 	margin-top: 3.4375rem;
 	padding-top: 2.5rem;
+}
+
+.article__bread {
+	left: 0.625rem;
+	transform: none;
+}
+
+.article__breadItem {
+	font-size: 0.625rem;
 }
 
 .article__info {

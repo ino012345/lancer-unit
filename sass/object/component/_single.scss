@@ -4,10 +4,35 @@
   padding-right: rem(15);
   padding-left: rem(15);
   margin-top: rem(80);
+  position: relative;
   @include mq(sp) {
     margin-top: rem(55);
     padding-top: rem(40);
   }
+  &__bread {
+    position: absolute;
+    top: rem(10);
+    left: 50%;
+    transform: translateX(-150%);
+    display: flex;
+    @include mq(sp) {
+      left: rem(10);
+      transform: none;
+    }
+  }
+  &__breadItem {
+    display: block;
+    white-space: nowrap;
+    margin-right: rem(5);
+    font-size: rem(12);
+    font-weight: bold;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include mq(sp) {
+      font-size: rem(10);
+    }
+  } 
   &__info {
     display: flex;
     max-width: rem(730);

@@ -2,6 +2,11 @@
 
 <main>
   <section class="archive" id="top">
+    <div class="article__bread">
+      <p class="article__breadItem"><a href="<?php echo home_url(); ?>">TOP</a></p>
+      <p class="article__breadItem">＞</p>
+      <p class="article__breadItem">クリエイターインタビュー</p>
+    </div>
     <h1 class="archive__title">クリエイターインタビュー</h1>
     <div class="archive__inner">
       <ul class="archive__list">

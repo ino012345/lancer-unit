@@ -2,6 +2,13 @@
 
 <main>
   <section class="article" id="top">
+    <div class="article__bread">
+      <p class="article__breadItem"><a href="<?php echo home_url(); ?>">TOP</a></p>
+      <p class="article__breadItem">＞</p>
+      <p class="article__breadItem"><a href="<?php echo home_url("interview"); ?>">クリエイターインタビュー</a></p>
+      <p class="article__breadItem">＞</p>
+      <p class="article__breadItem"><?php the_field('name'); ?></p>
+    </div>
     <div class="article__info">
       <div class="article__body">
         <h1 class="article__title"><?php the_field('catch'); ?></h1>
