@@ -66,6 +66,8 @@
     </div>
   </div>
 </footer>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/wow.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -1847,7 +1847,7 @@ summary {
 }
 
 .fv__body {
-	left: 4.375rem;
+	left: 6.25rem;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1898,21 +1898,44 @@ summary {
 	padding-left: 0.625rem;
 }
 
-.fv__mainImage {
-	height: auto;
+.slider {
+	height: 85vh;
 	margin-left: auto;
 	margin-right: 0;
-	width: 69.25%;
+	padding-left: 2.5rem;
+	position: relative;
+	width: 65%;
+	z-index: -1;
 }
 
-.fv__mainImage img {
-	-o-object-fit: cover;
-	-o-object-position: top;
-	border-radius: 1.25rem 0 0 1.25rem;
-	height: 100%;
-	object-fit: cover;
-	object-position: top;
-	width: 100%;
+/*　背景画像設定　*/
+
+.slider-item01 {
+	background: url(../img/001@4x.png);
+}
+
+.slider-item02 {
+	background: url(../img/002@4x.png);
+}
+
+.slider-item03 {
+	background: url(../img/003@4x.png);
+}
+
+.slider-item04 {
+	background: url(../img/005@4x.png);
+}
+
+.slider-item05 {
+	background: url(../img/005@4x.png);
+}
+
+.slider-item { /*背景画像をリピートしない*/
+	background-position: center; /*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+	background-repeat: no-repeat; /*背景画像の位置を中央に*/
+	background-size: contain; /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+	height: 85vh;
+	width: 100%; /*背景画像が.slider-item全体を覆い表示*/
 }
 
 .header {
@@ -2725,8 +2748,8 @@ summary {
 
 .article__title {
 	-webkit-text-decoration: underline 0.09375rem;
-	-webkit-text-underline-offset: 0.15em;
 	text-underline-offset: 0.15em;
+	-webkit-text-underline-offset: 0.15em;
 	color: #070749;
 	font-size: 1.42188rem;
 	font-weight: bold;
@@ -3135,7 +3158,7 @@ html {
 }
 
 .fv__body {
-	left: 8.75rem;
+	left: 12.5rem;
 }
 
 .fv__catch {
@@ -3153,8 +3176,14 @@ html {
 	padding-top: 0.875rem;
 }
 
-.fv__mainImage {
+.slider {
+	height: 80vh;
+	padding-left: 0;
 	width: 60%;
+}
+
+.slider-item {
+	height: 80vh;
 }
 
 .introduction__title {
@@ -3245,13 +3274,15 @@ html {
 	transform: translateX(-45%);
 }
 
-.fv__mainImage img {
-	border-radius: 0;
+.slider {
+	height: 39.375rem;
+	padding-left: 0;
+	padding-top: 20.625rem;
+	width: 100%;
 }
 
-.fv__mainImage {
-	padding-top: 18.75rem;
-	width: 100%;
+.slider-item {
+	height: 18.75rem;
 }
 
 }
@@ -3579,7 +3610,9 @@ html {
 	padding-top: 0.625rem;
 }
 
-.fv__mainImage {
+.slider {
+	height: 32.5rem;
+	padding-left: 0;
 	padding-top: 13.75rem;
 }
 

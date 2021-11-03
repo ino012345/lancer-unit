@@ -11,15 +11,15 @@
         <a href="<?php echo home_url('apply'); ?>" class="fv__btn fv__btn--right">クリエイター登録 ></a>
       </div>
     </div>
-    <figure class="fv__mainImage wow fadeInRight">
+    <!-- <figure class="fv__mainImage wow fadeInRight">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_236629968_Preview.jpeg" alt="パソコンを操作している画像">
-    </figure>
+    </figure> -->
     <ul class="slider">
-      <li class="slider-item slider-item01"><img src="" alt=""></li>
-      <li class="slider-item slider-item02"><img src="" alt=""></li>
-      <li class="slider-item slider-item03"><img src="" alt=""></li>
-      <li class="slider-item slider-item04"><img src="" alt=""></li>
-      <li class="slider-item slider-item05"><img src="" alt=""></li>
+      <li class="slider-item slider-item01"></li>
+      <li class="slider-item slider-item02"></li>
+      <li class="slider-item slider-item03"></li>
+      <li class="slider-item slider-item04"></li>
+      <li class="slider-item slider-item05"></li>
     </ul>
   </section>
   <section class="works">
