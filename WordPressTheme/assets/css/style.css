@@ -2725,6 +2725,7 @@ summary {
 
 .article__title {
 	-webkit-text-decoration: underline 0.09375rem;
+	-webkit-text-underline-offset: 0.15em;
 	text-underline-offset: 0.15em;
 	color: #070749;
 	font-size: 1.42188rem;

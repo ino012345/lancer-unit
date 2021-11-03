@@ -14,6 +14,13 @@
     <figure class="fv__mainImage wow fadeInRight">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_236629968_Preview.jpeg" alt="パソコンを操作している画像">
     </figure>
+    <ul class="slider">
+      <li class="slider-item slider-item01"><img src="" alt=""></li>
+      <li class="slider-item slider-item02"><img src="" alt=""></li>
+      <li class="slider-item slider-item03"><img src="" alt=""></li>
+      <li class="slider-item slider-item04"><img src="" alt=""></li>
+      <li class="slider-item slider-item05"><img src="" alt=""></li>
+    </ul>
   </section>
   <section class="works">
     <h1 class="works__title">ランサーユニット導入企業<span class="small">（一部抜粋）</span></h1>

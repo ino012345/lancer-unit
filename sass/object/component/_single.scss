@@ -59,6 +59,7 @@
     color: #070749;
     text-decoration: underline rem(1.5);
     text-underline-offset: 0.15em;
+    -webkit-text-underline-offset: 0.15em;
     @include mq(sp) {
       font-size: rem(18);
     }

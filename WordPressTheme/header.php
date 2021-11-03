@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css">
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/wow.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
