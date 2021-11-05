@@ -14,7 +14,7 @@
     <!-- <figure class="fv__mainImage wow fadeInRight">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_236629968_Preview.jpeg" alt="パソコンを操作している画像">
     </figure> -->
-    <ul class="slider">
+    <ul class="slider wow fadeInRight">
       <li class="slider-item slider-item01"></li>
       <li class="slider-item slider-item02"></li>
       <li class="slider-item slider-item03"></li>
