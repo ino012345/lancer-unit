@@ -57,9 +57,8 @@
     font-weight: bold;
     line-height: ( 90 / 35 );
     color: #070749;
-    text-decoration: underline rem(1.5);
-    text-underline-offset: 0.15em;
-    -webkit-text-underline-offset: 0.15em;
+    display: inline;
+    border-bottom: rem(1.5) solid #070749;
     @include mq(sp) {
       font-size: rem(18);
     }

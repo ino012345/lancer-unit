@@ -2747,14 +2747,12 @@ summary {
 }
 
 .article__title {
-	-webkit-text-decoration: underline 0.09375rem;
-	text-underline-offset: 0.15em;
-	-webkit-text-underline-offset: 0.15em;
+	border-bottom: 0.09375rem solid #070749;
 	color: #070749;
+	display: inline;
 	font-size: 1.42188rem;
 	font-weight: bold;
 	line-height: 2.57143;
-	text-decoration: underline 0.09375rem;
 }
 
 .article__badge {
