@@ -220,8 +220,8 @@
     <div class="news__inner">
       <iframe style="border:none" src="https://xworks.dhw.co.jp/new_contents"></iframe>
     </div>
-    <p class="news__attention">※案件情報の閲覧には、<a href="#">xWORKS Job Style Search （JSS）</a>のアカウント（登録無料）が必要です</p>
-    <a href="#" class="btn">他の求人情報を見る</a>
+    <p class="news__attention">※案件情報の閲覧には、<a href="https://xworks.dhw.co.jp/" target="_blank" rel="noopener noreferrer">xWORKS Job Style Search （JSS）</a>のアカウント（登録無料）が必要です</p>
+    <a href="https://xworks.dhw.co.jp/index.php" class="btn">他の求人情報を見る</a>
   </section>
   <section class="case">
     <h1 class="case__title">導入事例</h1>
@@ -231,7 +231,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
         </figure>
         <div class="case__body">
-          <p class="case__text">まるで社内メンバーのようにフリーランスユニットを活用。スピーディーなLP制作で、事業を成長させる！</p>
+          <a href="https://lancerunit.jp/cases/kaeru-abema-tv/" class="case__text">まるで社内メンバーのようにフリーランスユニットを活用。スピーディーなLP制作で、事業を成長させる！</a>
           <p class="case__industry">EC事業／エンターテイメント</p>
           <p class="case__name">ABEMA Shopping様</p>
           <div class="case__category">
@@ -239,7 +239,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
             </figure>
             <div class="case__categoryUnit">
-              <div class="case__categoryItem case__categoryItem--art">アートディレクター</div>
+              <div class="case__categoryItem case__categoryItem--director">アートディレクター</div>
               <div class="case__categoryItem case__categoryItem--graphic">グラフィックデザイナー</div>
               <div class="case__categoryItem case__categoryItem--web">WEBデザイナー</div>
             </div>
@@ -251,7 +251,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_278f6acb773d4ba7a8041abec1c81bb6~mv2.jpg" alt="DMM.make様画像">
         </figure>
         <div class="case__body">
-          <p class="case__text">もう、キャパオーバーに悩まない。どれほど案件が増えても対応できる柔軟性が、ユニットの魅力です。</p>
+          <a href="https://lancerunit.jp/cases/dmm-com/" class="case__text">もう、キャパオーバーに悩まない。どれほど案件が増えても対応できる柔軟性が、ユニットの魅力です。</a>
           <p class="case__industry">3Dプリント／製造／CG</p>
           <p class="case__name">DMM.make様</p>
           <div class="case__category">
@@ -280,12 +280,12 @@
         <p class="benefits__head">FREENANCE for デジタルハリウッド</p>
         <p class="benefits__detail">通常の「FREENANCE」と同様に『FREENANCE振込専⽤⼝座』を提供するほか、『FREENANCEあんしん補償』による仕事中の事故や納品物の⽋陥を原因とする事故の補償（最⾼5,000万円）や情報漏えい、著作権侵害などフリーランス特有の事故補償（最⾼500万円）が無料付帯します。<br>また、「FREENANCE for デジタルハリウッド」の『即⽇払い』では、デジタルハリウッドの卒業⽣であることから個⼈が特定されていること、デジタルハリウッドが取引の選定の仲介に⼊り企業がフリーランサーと取引を始めるという2点から、『即⽇払い』の利⽤においては通常よりも低い⼿数料でご利⽤（ランサーユニット案件のみ）いただくことができます。</p>
         <div class="benefits__linkWrap">
-          <a href="https://dhw.freenance.net/signup" class="benefits__link">登録・口座開設はこちら</a>
+          <a href="https://dhw.freenance.net/signup" target="_blank" class="benefits__link" rel="noopener noreferrer">登録・口座開設はこちら</a>
         </div>
       </div>
     </div>
     <div class="benefits__registerWrap">
-      <a href="#" class="benefits__register">新規会員登録＆即日支払いフローマニュアルを確認する ＞</a>
+      <a href="<?php echo get_template_directory_uri(); ?>/assets/dh_freenance_manual.pdf" class="benefits__register" target="_blank" rel="noopener noreferrer">新規会員登録＆即日支払いフローマニュアルを確認する ＞</a>
     </div>
     <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".3s">
       <figure class="benefits__image">
@@ -316,14 +316,7 @@
     ?>
       <a href="<?php echo $item->get_permalink(); ?>" class="seminar__card">
         <figure class="seminar__image">
-        <!-- 記事の最初の画像を表示 -->
-        <?php
-          $first_img = '';
-          if ( preg_match( '/<img.+?src=[\'"]([^\'"]+?)[\'"].*?>/msi', $item->get_content(), $matches ) ) {
-            $first_img = $matches[1];
-          }
-        ?>
-          <img src="<?php echo esc_attr( $first_img ); ?>" alt="ABEMA Shopping様画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_342410089.jpeg" alt="導入事例画像">
         </figure>
         <div class="seminar__body">
           <p class="seminar__badge">
@@ -349,10 +342,10 @@
             $date = date('Y/m/d',strtotime( $item_date ));
           ?>
             <p class="seminar__date"><?php echo $date; ?></p>
-            <div class="seminar__tags">
+            <!-- <div class="seminar__tags">
               <p class="seminar__tag">タグ</p>
               <p class="seminar__tag">タグ</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </a>
