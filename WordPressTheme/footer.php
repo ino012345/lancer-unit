@@ -75,7 +75,7 @@
         <li class="footer__snsLink">
           <a href="https://www.youtube.com/watch?v=7W9zieFp-oM"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube@2x.png" alt="youtube"></a>
         </li>
-        <li class="footer__snsLink">
+        <li class="footer__snsLink footer__snsLink--instagram">
           <a href="https://www.instagram.com/lancerunit/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_ig.png" alt="instagram"></a>
         </li>
       </ul>

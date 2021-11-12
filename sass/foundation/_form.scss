@@ -225,14 +225,6 @@ input[type="checkbox"] + span:hover::after {
 }
 
 /* checked */
-input[type="radio"]:checked + span,
-input[type="checkbox"]:checked + span {
-	color: #3498db;
-}
-input[type="radio"]:checked + span::before,
-input[type="checkbox"]:checked + span::before {
-	border-color: #3498db;
-}
 input[type="radio"]:checked + span::after,
 input[type="checkbox"]:checked + span::after {
 	position: absolute;
@@ -242,7 +234,6 @@ input[type="checkbox"]:checked + span::after {
 	width: 8px;
 	height: 8px;
 	margin-top: -4px;
-	background: #3498db;
 }
 
 /* radio */
@@ -257,16 +248,10 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover {
-	border-color: #3498db;
-	background: #3498db;
 	color: #fff;
 }
 
 /* focus */
-input:focus,
-textarea:focus {
-	border-color: #3498db;
-}
 input[type="submit"]:focus,
 input[type=reset]:focus,
 input[type="button"]:focus,

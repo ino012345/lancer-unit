@@ -231,19 +231,8 @@ input[type="checkbox"] + span:hover::after {
 
 /* checked */
 
-input[type="radio"]:checked + span,
-input[type="checkbox"]:checked + span {
-	color: #3498db;
-}
-
-input[type="radio"]:checked + span::before,
-input[type="checkbox"]:checked + span::before {
-	border-color: #3498db;
-}
-
 input[type="radio"]:checked + span::after,
 input[type="checkbox"]:checked + span::after {
-	background: #3498db;
 	content: "";
 	height: 8px;
 	left: -4px;
@@ -267,17 +256,10 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover {
-	background: #3498db;
-	border-color: #3498db;
 	color: #fff;
 }
 
 /* focus */
-
-input:focus,
-textarea:focus {
-	border-color: #3498db;
-}
 
 input[type="submit"]:focus,
 input[type=reset]:focus,
@@ -1587,6 +1569,10 @@ summary {
 	display: none;
 }
 
+.contact__label a {
+	color: #00a0e9;
+}
+
 .contact__detail {
 	font-size: 0.75rem;
 	font-weight: 600;
@@ -2168,6 +2154,10 @@ summary {
 }
 
 .footer__snsLink--facebook {
+	margin-top: -0.125rem;
+}
+
+.footer__snsLink--instagram {
 	margin-top: -0.125rem;
 }
 

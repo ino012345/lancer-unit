@@ -269,7 +269,7 @@
     </div>
     <a href="https://lancerunit.jp/cases/" class="btn">導入事例一覧はこちら</a>
   </section>
-  <section class="benefits">
+  <section class="benefits" id="anker">
     <h1 class="benefits__title">ランサーユニットメンバー特典</h1>
     <p class="benefits__explain">デジタルハリウッドの卒業⽣向けに、フリーランサー⽀援の提携プログラムを開始しています。</p>
     <div class="benefits__media wow fadeInUp" data-wow-offset="75" data-wow-delay=".3s">
