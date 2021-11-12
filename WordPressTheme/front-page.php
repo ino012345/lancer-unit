@@ -221,7 +221,7 @@
       <iframe style="border:none" src="https://xworks.dhw.co.jp/new_contents"></iframe>
     </div>
     <p class="news__attention">※案件情報の閲覧には、<a href="https://xworks.dhw.co.jp/" target="_blank" rel="noopener noreferrer">xWORKS Job Style Search （JSS）</a>のアカウント（登録無料）が必要です</p>
-    <a href="https://xworks.dhw.co.jp/index.php" class="btn">他の求人情報を見る</a>
+    <a href="https://xworks.dhw.co.jp/index.php" class="btn" target="_blank" rel="noopener noreferrer">他の求人情報を見る</a>
   </section>
   <section class="case">
     <h1 class="case__title">導入事例</h1>
