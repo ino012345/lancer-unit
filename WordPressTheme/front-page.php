@@ -42,10 +42,10 @@
     <div class="introduction__cardUnit">
       <div class="introduction__card introduction__card--left wow fadeInUp" data-wow-offset="75" data-wow-delay="0.75s">
         <p class="introduction__cardTitle">企業の課題</p>
-        <p class="introduction__cardProblem introduction__cardProblem--left">クリエイティブの外注が不安</p>
+        <p class="introduction__cardProblem introduction__cardProblem--left">自社に合うクリエイターを探している</p>
         <ul class="introduction__problemList">
           <li class="introduction__problemItem introduction__problemItem--left">スキルや条件に合う人材が見つからない</li>
-          <li class="introduction__problemItem introduction__problemItem--left">専属として長くお付き合いしたい</li>
+          <li class="introduction__problemItem introduction__problemItem--left">都度発注じゃなく、定期的に発注したい</li>
           <li class="introduction__problemItem introduction__problemItem--left">トレンドなど提案が欲しい</li>
         </ul>
         <p class="introduction__cardExplain introduction__cardExplain--left">ビジネスにおいて、Web や動画などのクリエイティブ制作が急きょ必要となる場面は多くあります。しかし社内にクリエイターを抱えることは採用コストも離職リスクも高く、またその度に体制を整えることにも大きな負荷がかかります。<br><br></p>
@@ -54,9 +54,9 @@
         <p class="introduction__cardTitle">クリエイターの想い</p>
         <p class="introduction__cardProblem introduction__cardProblem--right">フリーランスとして自由に働きたい</p>
         <ul class="introduction__problemList">
-          <li class="introduction__problemItem introduction__problemItem--right">時間や場所に縛られずに</li>
-          <li class="introduction__problemItem introduction__problemItem--right">自分の強みを活かして</li>
-          <li class="introduction__problemItem introduction__problemItem--right">企業との繋がりを確保</li>
+          <li class="introduction__problemItem introduction__problemItem--right">時間や場所に縛られずに働きたい</li>
+          <li class="introduction__problemItem introduction__problemItem--right">自分の好きや強みを仕事に活かしたい</li>
+          <li class="introduction__problemItem introduction__problemItem--right">企業との繋がりを確保したい</li>
         </ul>
         <p class="introduction__cardExplain introduction__cardExplain--right">一人で、必要スキルや企業カルチャー、条件（稼働・報酬）をカバーするには難しいことが多々あります。<br>案件ベースでなく企業の課題解決に必要なクリエイターとしてユニット（最大3名）に参加します。<br>企業と継続的なパートナーシップを築く事が期待できます。</p>
       </div>
@@ -179,25 +179,25 @@
     <ul class="job__imageList">
       <li class="job__imageItem">
         <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_313345888_Preview.jpeg" alt="Webデザインイメージ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_313345888.jpeg" alt="Webデザインイメージ">
         </figure>
         <p class="job__name">Webデザイン</p>
       </li>
       <li class="job__imageItem">
         <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".6s">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_234816836_Preview.jpeg" alt="Webコーディングイメージ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_234816836.jpeg" alt="Webコーディングイメージ">
         </figure>
         <p class="job__name">Webコーディング</p>
       </li>
       <li class="job__imageItem">
         <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".7s">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_114104662_Preview.jpeg" alt="イラストレーターイメージ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_114104662.jpeg" alt="イラストレーターイメージ">
         </figure>
         <p class="job__name">イラストレーター</p>
       </li>
       <li class="job__imageItem">
         <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".5s">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_206582313_Preview.jpeg" alt="グラフィックデザインイメージ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_206582313.jpeg" alt="グラフィックデザインイメージ">
         </figure>
         <p class="job__name">グラフィックデザイン</p>
       </li>
@@ -209,7 +209,7 @@
       </li>
       <li class="job__imageItem">
         <figure class="job__image wow fadeInUp" data-wow-offset="75" data-wow-delay=".7s">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_424740311_Preview.jpeg" alt="ディレクターイメージ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/AdobeStock_424740311.jpeg" alt="ディレクターイメージ">
         </figure>
         <p class="job__name">ディレクター</p>
       </li>
@@ -228,12 +228,12 @@
     <div class="case__cardUnit">
       <div class="case__card">
         <figure class="case__image">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="ABEMA Shopping様画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_c34c83cefd5a446c83881181a681eca0~mv2.jpg" alt="株式会社買えるAbemaTV様画像">
         </figure>
         <div class="case__body">
           <a href="https://lancerunit.jp/cases/kaeru-abema-tv/" class="case__text">まるで社内メンバーのようにフリーランスユニットを活用。スピーディーなLP制作で、事業を成長させる！</a>
           <p class="case__industry">EC事業／エンターテイメント</p>
-          <p class="case__name">ABEMA Shopping様</p>
+          <p class="case__name">株式会社買えるAbemaTV様</p>
           <div class="case__category">
             <figure class="case__logo">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
@@ -248,12 +248,12 @@
       </div>
       <div class="case__card">
         <figure class="case__image">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_278f6acb773d4ba7a8041abec1c81bb6~mv2.jpg" alt="DMM.make様画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/edf8d5_278f6acb773d4ba7a8041abec1c81bb6~mv2.jpg" alt="合同会社DMM.com様画像">
         </figure>
         <div class="case__body">
           <a href="https://lancerunit.jp/cases/dmm-com/" class="case__text">もう、キャパオーバーに悩まない。どれほど案件が増えても対応できる柔軟性が、ユニットの魅力です。</a>
           <p class="case__industry">3Dプリント／製造／CG</p>
-          <p class="case__name">DMM.make様</p>
+          <p class="case__name">合同会社DMM.com様</p>
           <div class="case__category">
             <figure class="case__logo">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancer-unit@2x.png" alt="LANCER UNIT ロゴ">
