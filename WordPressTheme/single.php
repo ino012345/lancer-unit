@@ -18,7 +18,7 @@
           <?php
             $categories = get_the_category();
             foreach( $categories as $category ) {
-              echo '<li class="article__category '.$category->slug.'"><a href="'.get_category_link($category->term_id).'">'.$category->name.'</a></li>';
+              echo '<li class="article__category '.$category->slug.'">'.$category->name.'</li>';
             }
           ?>
         </ul>

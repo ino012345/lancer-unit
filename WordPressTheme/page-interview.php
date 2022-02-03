@@ -35,7 +35,7 @@
             <h2 class="archive__singleTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p class="archive__badge"><?php the_field('badge'); ?></p>
             <p class="archive__name"><?php the_field('name'); ?></p>
-            <p class="archive__date"><?php the_time('Y/m/n'); ?></p>
+            <p class="archive__date"><?php the_time('Y/m/j'); ?></p>
           </div>
         </li>
         <?php endwhile;?>
